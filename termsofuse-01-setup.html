@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	 <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	 <link rel="stylesheet" href="css/termsofuse.css" type="text/css" media="screen">
+    <script src="js/vendor/modernizr.js"></script>
+	  
+  </head>
+  <body>
+    
+	 
+    <div class="row paddingtop50 paddingtop30_tablet paddingtop30_mobile">
+        <div class="large-12 medium-12 small-12 columns">
+            
+				
+				<h1 class="left">NCOA Terms of Use</h1>
+				<span class="safesecurebadge right">Safe &amp; Secure</span>
+				<div class="clear"></div>
+				
+				<div id="steps-breadcrumb">
+					<div class="progress-bar"></div>
+					<ul>
+						<!-- <li class="step-done"></li> -->
+						<li class="step-current"><span>1</span><p>Setup</p></li>
+						<li><span>2</span><p>Agree to Terms of Use</p></li>
+						<li><span>3</span><p>Review</p></li>
+						<li><span>4</span><p>Completed</p></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				
+				<a class="right" href='#'>Your Profile Information</a>
+				
+				<h4><strong>Hello Jack.</strong> You are signed in to your Canada Post business profile.</h4> 
+				<p>To agree to an NCOA Terms of Use, please complete the following information:</p>
+				
+				
+				<form action="index_submit" method="get" accept-charset="utf-8">
+					
+					<p><strong>1.  Enter your legal business name</strong></p>
+					<label for="business-name">Enter Your Legal Business Name</label>
+					<div class="row">
+						<div class="columns large-4">
+							<input type="text" name="business-name" value="" id="business-name">
+						</div>
+					</div>
+					
+					<span class="hr marginbottom15"></span>
+					
+					<p><strong>2.  Assign an alternate contact</strong></p>
+					<label for="alternate-contact">In case you are unavailable to renew, you can assign an alternate contact to act as your backup.</label>
+					<div class="row">
+						<div class="columns large-4 medium-10 small-10">
+							<input type="text" name="alternate-contact" value="" id="alternate-contact">
+						</div>
+						<div class="columns large-8 medium-2 small-2">
+							<a href='#'>placeholder</a>
+						</div>
+					</div>
+					
+					<span class="hr marginbottom15"></span>
+				
+					<p><strong>3.  Select your user type</strong></p>
+					<label for="user-type">Please select the user type that best matches your intended use of NCOA Mover Date services.</label>
+					
+					<ul class='radiogroupholder'>
+						<li>
+							<input type="radio" id="usertype-enduser" name="usertype" value="enduser">
+							<label for="usertype-enduser">
+								<span></span>
+								<strong>I am an End-User</strong><br/>
+								I will be using a third-party software or service to apply NCOA Mover Data updates to my own customer database or mailing list. I will not be using NCOA as part of any commercial service offering.
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="usertype-serviceprovider" name="usertype" value="serviceprovider">
+							<label for="usertype-serviceprovider">
+								<span></span>
+								<strong>I am a Service Provider</strong><br/>
+								I will be providing commercial NCOA Mover Data services to the market, or using NCOA as part of a commercial service offering. (As a Service Provider, you can also use NCOA to update your own customer data and lists)
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="usertype-servicebereau" name="usertype" value="servicebereau">
+							<label for="usertype-servicebereau">
+								<span></span>
+								<strong>I am a Service Bureau</strong> licensing NCOA Mover Data directly from Canada Post.
+							</label>
+						</li>
+					</ul>
+					
+					<input type="submit" class="button margintop40" value="Continue">
+				</form>
+				
+        </div>
+    </div>
+	 
+    
+
+    
+    
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+	 <script src="js/ncoa-js.js" type="text/javascript" charset="utf-8"></script>
+	 
+    <script>
+      $(document).foundation();
+		
+    </script>
+  </body>
+</html>

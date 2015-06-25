@@ -1,0 +1,33 @@
+/*common code - remove when moved*/	 
+.clear{clear:both;}
+.hr{border:solid #ccc;border-width:1px 0 0 0;display:block;margin:7px 0;padding:0;}
+
+
+#steps-breadcrumb{margin:40px 0;padding:0 0 16px 0;border:solid #cdcccc;border-width:3px 0 1px 0;}
+#steps-breadcrumb div.progress-bar{height:3px;margin: -3px 0 0 0;width:33.333%;background:#87ae20;}
+#steps-breadcrumb ul{margin:0;padding:0;}
+#steps-breadcrumb ul li{list-style:none;margin:0;padding:0;float:left;text-align:center;}
+#steps-breadcrumb ul li:first-child p{text-align:left;}
+#steps-breadcrumb ul li:first-child span{margin:-14px 0 0 0;}
+#steps-breadcrumb ul li:last-of-type p{text-align:right;}
+#steps-breadcrumb ul li:last-of-type span{margin:-14px 0 16px 0;float:right;}
+#steps-breadcrumb ul li span{border:2px solid #cdcccc;display:block;width:24px;height:24px;text-align:center;margin:-14px auto 0 auto;-webkit-border-radius:50px;-moz-border-radius:50px;border-radius:50px;line-height:20px;font-size:14px;background:#cdcccc;color:#fff;font-weight:500;clear:both;}
+#steps-breadcrumb ul li.step-done span{border:2px solid #87ae20;background:#87ae20 url('images/checkmark.jpg') no-repeat 2px 2px;font-size:0;}
+#steps-breadcrumb ul li.step-current span{border:2px solid #87ae20;background:#fff;color:#87ae20;}
+#steps-breadcrumb ul li p{display:block;text-align:center;clear:both;margin:15px 0 0 0;color:#333333;}
+	
+span.safesecurebadge{background:url('images/safesecurebadge.jpg') no-repeat top left;margin:6px 0 0 0;padding:0 0 0 38px;height:32px;font-size:15px;color:#666666;line-height:34px;}
+	
+ul.radiogroupholder{margin:20px 0 20px 0;padding:0;}
+ul.radiogroupholder li{margin:0;padding:10px 0 10px 40px;list-style:none;position:relative;}
+ul.radiogroupholder input[type="radio"]{display:none;}
+ul.radiogroupholder input[type="radio"] + label span{position:absolute;display:inline-block;width:14px;height:14px;margin:4px 0 0 -40px;vertical-align:middle;cursor:pointer;-moz-border-radius:50%;border-radius:50%;}
+ul.radiogroupholder input[type="radio"] + label span{background-color:#fff;border:2px solid #fff;}
+ul.radiogroupholder input[type="radio"] + label span:before{content:"";display:block;position:absolute;top:-9px;left:-9px;border:solid 2px #ccc;width:28px;height:28px;padding-bottom:12px;min-height:100%;z-index:10;-moz-border-radius:50%;border-radius:50%;}
+ul.radiogroupholder input[type="radio"]:checked + label span{background-color:#1784c4;border:2px solid #1784c4;}
+ul.radiogroupholder input[type="radio"]:checked + label span:before{border:solid 2px #1784c4;} 
+ul.radiogroupholder input[type="radio"] + label span,
+ul.radiogroupholder input[type="radio"]:checked + label span,
+ul.radiogroupholder input[type="radio"] + label span:before,
+ul.radiogroupholder input[type="radio"]:checked + label span:before{-webkit-transition:all 0.4s linear;-o-transition:all 0.4s linear;-moz-transition:all 0.4s linear;transition:all 0.4s linear;}
+	
