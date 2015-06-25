@@ -32,68 +32,105 @@
 					</ul>
 				</div>
 				
-				<a class="right" href='#'>Your Profile Information</a>
+			
+				<div class="panel right print-terms-panel">
+					<p>If internal review is needed, <a href='#'>print out these Terms of Use</a> prior to proceeding further.</p>
+				</div>
+			
+				<p>To be eligible to cleanse customer records or a mailing list using NCOA Mover Data service, all parties with access to the service’s output files must agree to these Terms of Use. Terms of Use govern the use of Canada Post’s mover name and address data and help you understand what you can and cannot do with the data. Please read them carefully.</p>
+				<p>You are signing Terms of Use as an officer of your company, firm or organization.</p>
+
+				<div class="clear"></div>
 				
-				<h4><strong>Hello Jack.</strong> You are signed in to your Canada Post business profile.</h4> 
-				<p>To agree to an NCOA Terms of Use, please complete the following information:</p>
 				
+				<form action="termsofuse-02-agree_to_terms_of_use_submit" method="get" accept-charset="utf-8">
+
 				
-				<form action="index_submit" method="get" accept-charset="utf-8">
+				<div class="panel white">
+					<p><strong>NCOA Mover Data may only be used to:</strong></p>
+					<ol>
+						<li>
+							Obtain correct address information to cleanse a mailing list prior to mailing.
+							<p>A mailing list cannot be cleansed with NCOA before being commercialized (sold or rented). A mailing list can however be updated with NCOA for a specific campaign or on behalf of a single client.</p>
+						</li>
+						<li>
+							Update a database record with new mover information if a Business Relationship exists between the recipient organization and the mover.
+							<p>A Business Relationship exists between a mover and an organization when an individual or business has:</p>
+							<ul>
+								<li>made a purchase or donation, rented, leased, contracted, or participated in an organization’s provision of products or services within the past 24 months; or</li>
+								<li>requested information or made an inquiry within the last 6 months.</li>
+							</ul>
+						</li>
+					</ol>
+					<p>If such purchase, donation, rent, lease or contract for the provisions of products and services involves ongoing use or transactions under a subscription, account, loan or similar relationship, the 24-month period starts on the day the relationship terminates.</p>
 					
-					<p><strong>1.  Enter your legal business name</strong></p>
-					<label for="business-name">Enter Your Legal Business Name</label>
-					<div class="row">
-						<div class="columns large-4">
-							<input type="text" name="business-name" value="" id="business-name">
-						</div>
+					<div class="agree-checkbox-holder">
+						<input type="checkbox" id="checkbox-agree-one" tab-index="1" />
+						<label for="checkbox-agree-one">I acknowledge and agree</label>
+					</div>					
+				</div>
+	
+	
+				<div class="panel white">
+					<p><strong>I SHALL NOT use the NCOA Mover Data to:</strong></p>
+					<ol> 
+						<li>Augment an address database to include any person with whom I do not have a business relationship;</li>
+						<li>Create a mailing list or other sub-list to target customers based on the knowledge of their move;</li>
+						<li>Use the NCOA Mover Data to find specific individuals by carrying out a single instance data retrieval, skip tracing or verifying address information for a single address;</li>
+						<li>Conduct any statistical activities or analyze mover patterns;</li>
+						<li>Sell commercial lists that include NCOA Mover Data updates;</li>
+						<li>For any other purposes other than correcting mailing lists or updating databases where a business relationship exists.</li>
+					</ol>
+					<div class="agree-checkbox-holder">
+						<input type="checkbox" id="checkbox-agree-two"/>
+						<label for="checkbox-agree-two">I acknowledge and agree</label>
 					</div>
-					
-					<span class="hr marginbottom15"></span>
-					
-					<p><strong>2.  Assign an alternate contact</strong></p>
-					<label for="alternate-contact">In case you are unavailable to renew, you can assign an alternate contact to act as your backup.</label>
-					<div class="row">
-						<div class="columns large-4 medium-10 small-10">
-							<input type="text" name="alternate-contact" value="" id="alternate-contact">
-						</div>
-						<div class="columns large-8 medium-2 small-2">
-							<a href='#'>placeholder</a>
-						</div>
-					</div>
-					
-					<span class="hr marginbottom15"></span>
+				</div>
 				
-					<p><strong>3.  Select your user type</strong></p>
-					<label for="user-type">Please select the user type that best matches your intended use of NCOA Mover Date services.</label>
-					
-					<ul class='radiogroupholder'>
-						<li>
-							<input type="radio" id="usertype-enduser" name="usertype" value="enduser">
-							<label for="usertype-enduser">
-								<span></span>
-								<strong>I am an End-User</strong><br/>
-								I will be using a third-party software or service to apply NCOA Mover Data updates to my own customer database or mailing list. I will not be using NCOA as part of any commercial service offering.
-							</label>
-						</li>
-						<li>
-							<input type="radio" id="usertype-serviceprovider" name="usertype" value="serviceprovider">
-							<label for="usertype-serviceprovider">
-								<span></span>
-								<strong>I am a Service Provider</strong><br/>
-								I will be providing commercial NCOA Mover Data services to the market, or using NCOA as part of a commercial service offering. (As a Service Provider, you can also use NCOA to update your own customer data and lists)
-							</label>
-						</li>
-						<li>
-							<input type="radio" id="usertype-servicebereau" name="usertype" value="servicebereau">
-							<label for="usertype-servicebereau">
-								<span></span>
-								<strong>I am a Service Bureau</strong> licensing NCOA Mover Data directly from Canada Post.
-							</label>
-						</li>
-					</ul>
-					
-					<input type="submit" class="button margintop40" value="Continue">
+				
+				<div class="panel white">
+					<p>I am accepting these Terms of Use on behalf of my organization. I will ensure that any additional recipients of the updated mover information within my organization are aware that they are also subject to the NCOA Terms of Use. Canada Post may take legal action if these Terms of Use are violated.</p>
+					<div class="agree-checkbox-holder">
+						<input type="checkbox" id="checkbox-agree-three"/>
+						<label for="checkbox-agree-three">I acknowledge and agree</label>
+					</div>
+				</div>
+
+				<div class="panel white">
+					<p>By agreeing NCOA Terms of Use, I will receive a Terms of Use ID.  This ID, along with my clients’ Terms of Use IDs are to be validated before NCOA Mover data processing is done.  I will re-acknowledge these Terms of Use every 12 months to continue using the NCOA Mover datea service.  The obligations described in these Terms of Use continue after any termination of any such NCOA data arrangements.</p>
+					<div class="agree-checkbox-holder">
+						<input type="checkbox" id="checkbox-agree-four"/>
+						<label for="checkbox-agree-four">I acknowledge and agree</label>
+					</div>
+				</div>
+				
+				<div class="panel white">
+					<p>All other parties, including without limiation, any advertising agency, mail service provider or any other party transmitting any NCOA Mover Data must sign their own NCOA Terms of Use.  When processing NCOA Mover Data, I will provide both my Terms of Use ID and my client’s Terms of Use ID for each job processed.  Using a single Terms of Use ID to process NCOA Mover Data for multiple end-users is strictly prohibited.</p>
+					<div class="agree-checkbox-holder">
+						<input type="checkbox" id="checkbox-agree-five"/>
+						<label for="checkbox-agree-five">I acknowledge and agree</label>
+					</div>
+				</div>
+				
+				<div class="panel white">
+					<p>Canada Post makes no warranty or representation, either express or implied, with respect to the NCOA Mover Data file, including its correctness, quality, performance, merchantability, or fitness for particular purpose. Canada Post shall not be liable for direct, indirect, special, incidental, consequential damages, or any loss of use, revenue or profit arising out of use or inability to use the NCOA Mover Data, even if advised of the possibility of such damages.</p>
+					<div class="agree-checkbox-holder">
+						<input type="checkbox" id="checkbox-agree-six"/>
+						<label for="checkbox-agree-six">I acknowledge and agree</label>
+					</div>
+				</div>
+				
+				
+				<div class="row margintop60">
+					<div class="columns large-12">
+						<input type="submit" class="button light marginright10" value="Previous">
+						<input type="submit" class="button" value="Continue">
+					</div>
+				</div>
+				
 				</form>
+				
+				
 				
         </div>
     </div>
