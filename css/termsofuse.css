@@ -25,9 +25,10 @@ div.panel.print-terms-panel{width:25%;text-align:center;border:none;margin:0 0 3
 @media only screen and (max-width:40em){div.panel.print-terms-panel{width:100%;margin: 0 0 20px 0;background:#f3f3f3 url('../images/printpanelbg.png') no-repeat 20px 20px;padding-left:110px;padding-top:1.25rem;}}
 div.panel.white{background:#fff;border-color:#ccc;}
 div.panel.noborder{border:none;}
-	
-	
-	
+a.linktoppt{
+	padding: 0 25px 0 0;
+		background: url('../images/linktoppt.png') no-repeat right 2px;
+	}
 	
 ul.radiogroupholder{margin:20px 0 20px 0;padding:0;}
 ul.radiogroupholder li{margin:0;padding:10px 0 10px 40px;list-style:none;position:relative;}

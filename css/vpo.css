@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+body {font-family: 'Roboto', sans-serif;}
+
+#pageHeading {font-weight: 400; margin-bottom: 2.500rem;}
+/*header#header, #segmentSearch {margin-bottom: 2.50rem;}*/
+/*#leftCol, #rightCol {margin-top: 3.750rem;}*/
+
+#area-header .ls-canvas .ls-area-body { overflow: visible !important; }
+.contain-to-grid {background: none;}
+.reveal-modal-bg {background: rgba(0, 0, 0, 0.95); opacity:0.7;}
+button.radius, .button.radius {-ms-border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -0-border-radius: 2px; border-radius: 2px;}
+
+.list .entry-header {margin-bottom: 30px; margin-bottom: 1.875rem;}
+.entry .entry-header {margin-bottom: 30px; margin-bottom: 1.875rem;}
+
+.entry-date {width: 60px; float: left; padding: 10px; padding: 0.625rem; text-align: center; background-color: #cbd7df;}
+
+.entry-title h2 {font-size: 27px; font-size: 1.688rem; line-height: 32px; line-height: 2rem; font-weight: 300; margin: 0 0 15px 0; margin: 0.938rem 0 0.5rem 0; }
+
+/*.entry-title {font-size: 26px; font-size: 1.625rem; font-weight: 400; line-height: 0.875;}*/
+
+.entry-title a {color: #333;}
+.entry-title a:hover {color: #999;}
+.entry-title small {font-size: 13px; font-size: 0.813rem; line-height: 0;}
+.entry-image {clear: left; margin: 30px 0; margin: 1.875rem 0;}
+.list .entry-image {max-height: 172px; max-height: 10.750rem; height: auto; overflow: hidden; max-width: 632px; max-width:39.500rem; }
+
+.cta > a {	color:#087cc0 !important; }
+a.cta:hover {   color: #6daad0 !important;}
+.entry-title .catLabel a {
+	color:#087cc0;
+}
+.entry-title .catLabel a:hover {
+	color:#6daad0;
+}
+/*.entry-title .catLabel a:visited, .cta > a:visited {	color:#86badb; }*/
+
+.entry-content { margin-bottom: 15px; margin-bottom: 0.938rem; }
+
+.post_sharethis_wrap {margin: 30px 0; margin: 1.875rem 0 0.938rem; }
+
+article hr { color: #dadada; margin: 1.875rem 0; }
+
+.tagsLabel { margin-bottom: 20px; margin-bottom: 1.250rem; color: #999;}
+.entry .tagsLabel { line-height: 32px; line-height: 2rem; }
+.tagsLabel > a { background: #F3F3F3; color: #0078A0; margin: 7px 3px; padding: 5px 10px; 
+                line-height: 2.5; font-size: 14px;
+				-ms-transition: background-color 300ms ease-out 0s;				
+				-moz-transition: background-color 300ms ease-out 0s;
+				-webkit-transition: background-color 300ms ease-out 0s;
+	            transition: background-color 300ms ease-out 0s;}
+.tagsLabel > a:hover {background: #107CC0; color: #fff;}
+
+.author { color: #333; }
+
+/*Added for Blogs Business Services */
+#blogPage.list .blueCatLabel { margin-bottom: 20px; margin-bottom: 1.250rem; color: #0078A0;}
+#blogPage .blueCatLabel h6 { border: 1px solid; color: #0078A0; float: left; margin: 5px; margin: 0.313rem 0; padding: 5px; padding: 0.313rem; }
+#collectingPage.list .entry-image {width: 25%; overflow: hidden; padding-top:5px; padding-top: 0.313rem;}
+
+/*Added for collecting */
+#collectingPage .blueCatLabel, #collectingPage .tagsLabel { margin-bottom: 56px; margin-bottom: 3.5rem; color: #0078A0; }
+#collectingPage .blueCatLabel h6 { border: 1px solid; color: #0078A0; float: left; margin: 5px 0; margin: 0.313rem 0; padding: 5px; padding: 0.313rem; }
+
+/* #collecting .entry-meta{} */
+
+#productsPage .entry-image {clear: left; width: 100%; margin: 20px 0; margin: 1.250rem 0;}
+#productsPage .entry-meta.small-6.small-offset-1 {padding-left: 11px; padding-left: 0.725rem;}
+#productsPage .entry-content {margin-top: 10px; margin-top: 0.625rem;}
+#productsPage .entry-content h2 {margin-bottom: 30px; margin-bottom: 1.875rem;}
+#productsPage .entry-content h4 {font-weight: bold;}
+#productsPage .entry-content .panel > h2 {margin-bottom: 30px; margin-bottom: 1.875rem;}
+#productsPage .entry-content .panel > h4 {font-weight: bold; margin-bottom: 6px; margin-bottom: 0.375rem;}
+
+/* Products Sub Navigation Menu */
+
+.productSubNav { border-bottom: 1px solid #DADADA; margin-bottom: 50px;}
+.productSubNav .inline-list { margin: 0 0 0 -22px; margin: 0 0 0 -1.375rem}
+.productSubNav .inline-list > li { margin-left: 58px; margin-left: 3.675rem; }
+.productSubNav .inline-list > li > a { color: #333;}
+.productSubNav .inline-list > li.active { border-bottom: 6px solid #2BA6CB; }
+.productSubNav .inline-list > li.active > a { margin: 0 10px 15px; font-weight: bold; }
+
+/* #productsPage .entry-meta{} */
+	
+.widget {margin-bottom: 50px; margin-bottom: 3.125rem;}
+.title {border-top: 6px solid #da291c; font-size: 20px; font-size: 1.250rem; font-weight: 300; padding-top: 5px; padding-top: 0.313rem;}
+
+/* Sharethis button fixes */
+.stButton {z-index:0; margin: 0 0.938rem 0 0 !important; margin: 0 15px 0 0 !important; }
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {height: 24px !important;}
+.stButton .stButton_gradient {height: auto !important;}
+
+/* Pagination Styles */
+#cpc-pagination-more,
+#cpc-pagination-cancels,
+#cpc-pagination-search {margin: 20px 0; margin: 1.250rem 0;}
+#cpc-pagination-more a,
+#cpc-pagination-cancels a,
+#cpc-pagination-search a {color: #333; background: #ccc; display: block; line-height: 50px; font-weight: 500; text-align: center; margin: 80px 0; margin: 5rem 0; font-size:16px; font-size: 1rem;}
+#cpc-pagination-cancels a,
+#cpc-pagination-more a { margin: 59px 0 0; margin: 3.7rem 0 0;  }
+#cpc-pagination-more a i,
+#cpc-pagination-cancels a i,
+#cpc-pagination-search a i {width: 34px; height: 50px; display: inline-block; vertical-align: top; margin-left: 10px; background: url('/assets/img/components/pagination/more.png') no-repeat 50%;}
+
+#cpc-pagination-next {margin: 20px 0; margin: 1.250rem 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#cpc-pagination-next a {color: #333; display: block; line-height: 32px; }
+#cpc-pagination-next a:hover {color: #999;}
+/*#cpc-pagination-next a.prev {padding-left: 50px; background: url('/assets/img/components/pagination/prev.png') no-repeat 0% 50%;}*/
+#cpc-pagination-next a.prev {
+    background: url("/assets/img/components/pagination/Arrow4_Left.png") no-repeat 0 0 #fff;
+	background-size: 32px auto;
+    height: 32px;
+    overflow: hidden;
+    padding-left: 48px;
+	margin: 5px 0;
+}
+/*#cpc-pagination-next a.next {padding-right: 50px; background: url('/assets/img/components/pagination/next.png') no-repeat 100% 50%;}*/
+#cpc-pagination-next a.next {
+    background: url("/assets/img/components/pagination/Arrow4_right.png") no-repeat 64px 0 #fff;
+	background-size: 32px auto;
+    height: 32px;
+    overflow: hidden;
+    padding-right: 55px;
+	padding-left: 15px;
+	margin: 5px 0;
+}
+
+#cpc-pagination-next.fr a.next {
+	padding-right: 45px;
+	padding-left: 0;
+}
+#cpc-pagination-next a.prev:hover{
+    background-position: 0 -32px;
+}
+#cpc-pagination-next a.next:hover{
+    background-position: 64px -32px;
+}
+
+.showmore-results-wrap {
+  text-align: center;
+  font-size: 12px;
+  font-size: 0.750rem;
+  font-style: italic;
+  color: #757575;
+  line-height: 80px;
+  margin: 0;
+}
+
+
+/* Sidebar Postage Widget */
+.widget.postal_rates {}
+.widget.postal_rates a.right {
+    margin-top: 1.5em;
+}
+.widget.postal_rates .grey {
+    color: #666;
+}
+.widget.postal_rates h2.title {
+    margin-bottom: 0;
+}
+.widget.postal_rates h5.canada,
+.widget.postal_rates h5.usa,
+.widget.postal_rates h5.international {
+    border-top: 1px solid #CCC;
+    padding-top: 1em;
+    margin-top: 1em;
+    line-height: 35px;
+    font-weight: 300;
+}
+.widget.postal_rates h5 .icon {
+    width: 46px;
+    height: 35px;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.widget.postal_rates h5.canada .icon {
+    background: url('/assets/img/icons/rate_can.jpg') no-repeat 0 50%;
+}
+.widget.postal_rates h5.usa .icon {
+    background: url('/assets/img/icons/rate_usa_c.jpg') no-repeat 0 50%;
+}
+.widget.postal_rates h5.international .icon {
+    background: url('/assets/img/icons/rate_int.jpg') no-repeat 0 50%;
+}
+.widget.postal_rates .price-line {
+    font-weight: 500;
+    font-size: 0.9em;
+    clear: both;
+}
+.widget.postal_rates .price-line .size-30-50 {
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+}
+
+
+
+/* Stamps */
+#stamp-specifications > div {border-bottom: 1px solid #ccc; margin: 20px; margin: 1.250rem 0;}
+
+
+/* KB Entry */
+#kbPage.list .entry-header {margin-bottom: 0;}
+#kbPage .entry-title a {color: #333;}
+#kbPage .entry-title a:hover {color: #999;}
+
+/* Search Predictive Type Ahead */
+.ui-autocomplete {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	list-style: none;
+	position: absolute;
+	z-index: 100;
+}
+
+.ui-autocomplete.ui-widget {font-size: 14px; font-weight: 400; font-family: 'Roboto',sans-serif;}
+
+.ui-autocomplete li {
+	border-bottom: 0px solid #DADADA;
+	float: none;
+}
+
+.ui-autocomplete > *:first-child {
+	margin-top: 0;
+}
+
+.ui-autocomplete li a:not(.button){
+	background-color: #FFFFFF;
+	color: #333333;
+	display: block;
+	font-weight: 400;
+	line-height: 45px;
+	padding: 0 15px;
+}
+
+.ui-autocomplete li a:hover:not(.button){
+	background-color:#F3F3F3;
+	color: #087CC00;
+}
+
+
+	#results-menu{background-color:#333; margin: 0 0 60px; font-size:14px; color:#FFF; padding:10px 0; width:100%;}
+	#results-menu p {display: inline; color: #fff; font-weight: 700; margin: 0;}
+
+	ul#search-bar {display:inline; list-style:none; margin:0; padding:0; color:#999;}
+	ul#search-bar li {display:inline; margin:0; padding:0; padding-left: 15px;}
+	
+	ul#search-bar li:before {content:"|"; padding-right:15px;}
+	ul#search-bar li:first-child:before {content:" ";}
+	
+	ul#search-bar li a{padding:0; padding-right: 0px; color: #02c0d6;}
+	ul#search-bar li a.active, ul#search-bar li a:hover {color:#fff;}
+	a.arrow {background: url("/assets/img/icons/arrow_right_8x13px.svg") no-repeat right center #FFFFFF; padding-right: 15px; padding-right: 0.938rem;}
+	
+	/*.search-result-header{margin-bottom:10px;}*/
+	.search-result-header > * {margin: 0 0 25px; margin-bottom: 0 0 1.563rem;}
+	.search-results-container{border-top:4px double #DDDDDD;}
+	.search-results{border-bottom:1px solid #DDDDDD; margin-bottom:40px; padding:40px 0;}
+	.search-results h2 {font-size: 27px; font-size: 1.688rem; line-height: 32px; line-height: 2rem; font-weight: 300; margin: 0 0 15px 0; margin: 0 0 0.5rem 0;}
+	.search-results h2 a {color: #333;}
+	.search-results h2 a:hover {color: #999;}
+	.search-results p {text-overflow: ellipsis; overflow: hidden;}
+	.search-results p:last-child, .search-results p:last-child .button {margin-bottom: 0;}
+	.segment-pdf {color:#666666; background:url("/assets/img/icons/icon-pdf.png") 0 0 no-repeat; margin-left: 5px; padding:2px 5px 2px 25px;}
+	
+	.content-spotlight-right {
+    border: 1px solid #DBDBDB;
+    overflow: hidden;
+    padding: 25px 15px;
+}
+
+.content-spotlight-right h2 {
+    color: #1C85C6;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* Alerts and Messages */
+.alert-box {
+    border: medium none;
+    color: #444444;
+    display: block;
+    margin-bottom: 0.625rem;
+    margin-top: 0.063rem;
+    padding: 15px 0;
+    position: relative;    
+}
+
+.alert-box.msgWarning {background-color: #fff2cd;}
+.alert-box.msgError {background-color: #fbe9e8;}
+.alert-box.msgSuccess {background-color: #f5f7e0;}
+.alert-box.msgInfo {background-color: #e6eff9;}
+
+code {
+	border: none;
+	background-color: transparent;
+}
+
+.alert-box code {
+    float: left;
+    text-align: center;
+}
+
+.alert-box p {
+    margin: 0 0 0 44px;
+    padding: 0;
+    position: relative;
+	font-size: 16px !important;
+}
+
+div.msgWarning code span, div.msgError code span, div.msgSuccess code span, div.msgInfo code span {
+    display: inline-block;
+    height: 2.875rem;
+    left: -0.063rem;
+    position: absolute;
+    text-align: center;
+    text-indent: -624.938rem;
+    top: -0.063rem;
+    width: 3.438rem;
+    z-index: 2;
+}
+
+div.msgWarning code span {
+    background: url("http://canadapost.ca/assets/img/icons/yellow_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
+}
+
+
+div.msgError code span {
+    background: url("/assets/img/icons/red_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
+}
+
+
+div.msgSuccess code span {
+    background: url("http://canadapost.ca/assets/img/icons/green_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
+}
+
+div.msgInfo code span {
+    background: url("/assets/img/icons/blue_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
+}
+
+.show-for-signed-in {display: none;}
+.is-signed-in .show-for-signed-in {display: block;}
+
+#errorpage #sitelinks, #wrapper.errorpage #sitelinks {height: inherit;}
+#errorpage #sitelinks ul, #wrapper.errorpage #sitelinks ul {margin-bottom: 0;}
+#errorpage #sitelinks ul li, #wrapper.errorpage #sitelinks ul li {list-style: none;}
+#errorpage .panel, #wrapper.errorpage .panel {margin-top: 40px; margin-top: 2.500rem; border: none;}
+#errorpage h2.red, #wrapper.errorpage h2.red {background: url('/web/assets/img/icons/error2_48x48.png') 0 6px no-repeat; background-size: 24px 24px; padding-left: 34px;}
+
+#area-promotional .marketing_promotion.lb {
+    margin-top: 60px;
+}
+
+.reveal-modal {border-top: 6px solid #da291c;}
+.reveal-modal .hide-for-large-up .signup {margin-top: 1.125rem;margin-bottom: 0;}
+dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {font-size: 24px; font-size: 1.5rem; font-weight: 300;}
+
+/* main.css overrides */
+
+#headercontainer, #totalsummarysubsection, #businesscontainer, #detailcontainer {width: inherit;}
+
+
+.lt-ie10 select, .lt-ie9 select {
+	background-image: none !important;
+}
+
+/* Highlight header link item - currently viewed page */
+#header .current {
+	color: #087cc0;		
+}
+
+/* styling for newly added close to mobile flyout menu */
+#header .close-Aside {
+	margin-top: 10px;
+	position: absolute;
+	border-top: 1px solid #dadada;
+	width: 95%;
+	text-align: right;
+}
+
+/* kill the border in foundation3 for all IE8 buttons */
+.lt-ie9 .button {
+	border:none;
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+	#main.blogview #leftCol, #main.blogview #rightCol {width: 100%;} 
+	#rightCol .widget ul li span {padding-right: 109px !important;}
+}
