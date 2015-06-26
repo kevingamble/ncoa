@@ -1,6 +1,7 @@
 /*common code - remove when moved*/	 
 .clear{clear:both;}
 .hr{border:solid #ccc;border-width:1px 0 0 0;display:block;margin:7px 0;padding:0;}
+.blue_question_icon{background:url('http://canadapost.ca/cpotools/mc/assets/images/structure/blue_question_icon.gif') 0 70% no-repeat;padding-left:20px;}
 
 
 /*breadcrumb stuff*/
@@ -25,14 +26,12 @@ div.panel.print-terms-panel{width:25%;text-align:center;border:none;margin:0 0 3
 @media only screen and (max-width:40em){div.panel.print-terms-panel{width:100%;margin: 0 0 20px 0;background:#f3f3f3 url('../images/printpanelbg.png') no-repeat 20px 20px;padding-left:110px;padding-top:1.25rem;}}
 div.panel.white{background:#fff;border-color:#ccc;}
 div.panel.noborder{border:none;}
-a.linktoppt{
-	padding: 0 25px 0 0;
-		background: url('../images/linktoppt.png') no-repeat right 2px;
-	}
+a.linktoppt{padding:0 25px 0 0;background:url('../images/linktoppt.png') no-repeat right 2px;}
 	
+
 ul.radiogroupholder{margin:20px 0 20px 0;padding:0;}
 ul.radiogroupholder li{margin:0;padding:10px 0 10px 40px;list-style:none;position:relative;}
-ul.radiogroupholder input[type="radio"]{display:none;}
+ul.radiogroupholder input[type="radio"]{position:absolute;left:-9999px;}
 ul.radiogroupholder input[type="radio"] + label span{position:absolute;display:inline-block;width:14px;height:14px;margin:4px 0 0 -40px;vertical-align:middle;cursor:pointer;-moz-border-radius:50%;border-radius:50%;}
 ul.radiogroupholder input[type="radio"] + label span{background-color:#fff;border:2px solid #fff;}
 ul.radiogroupholder input[type="radio"] + label span:before{content:"";display:block;position:absolute;top:-9px;left:-9px;border:solid 2px #ccc;width:28px;height:28px;padding-bottom:12px;min-height:100%;z-index:10;-moz-border-radius:50%;border-radius:50%;}
@@ -42,8 +41,7 @@ ul.radiogroupholder input[type="radio"] + label span,
 ul.radiogroupholder input[type="radio"]:checked + label span,
 ul.radiogroupholder input[type="radio"] + label span:before,
 ul.radiogroupholder input[type="radio"]:checked + label span:before{-webkit-transition:all 0.4s linear;-o-transition:all 0.4s linear;-moz-transition:all 0.4s linear;transition:all 0.4s linear;}
-
-
+ul.radiogroupholder input[type="radio"]:not(:checked):focus + label span:before{border:2px solid #087cc0;}
 
 div.agree-checkbox-holder{}
 div.agree-checkbox-holder label{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
@@ -61,7 +59,7 @@ div.agree-checkbox-holder [type="checkbox"]:disabled:checked + label:before{box-
 div.agree-checkbox-holder [type="checkbox"]:disabled:checked + label:after{color:#999;}
 div.agree-checkbox-holder [type="checkbox"]:disabled + label{color:#aaa;}
 div.agree-checkbox-holder [type="checkbox"]:checked:focus + label:before,
-div.agree-checkbox-holder [type="checkbox"]:not(:checked):focus + label:before{border:2px dotted blue;}
+div.agree-checkbox-holder [type="checkbox"]:not(:checked):focus + label:before{border:2px solid #087cc0;}
 
 
 
