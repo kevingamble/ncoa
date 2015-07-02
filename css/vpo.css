@@ -333,7 +333,7 @@ div.msgWarning code span {
 
 
 div.msgError code span {
-    background: url("/assets/img/icons/red_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
+    background: url("http://canadapost.ca/assets/img/icons/red_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
 }
 
 
@@ -342,7 +342,7 @@ div.msgSuccess code span {
 }
 
 div.msgInfo code span {
-    background: url("/assets/img/icons/blue_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
+    background: url("http://canadapost.ca/assets/img/icons/blue_alert_retina.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); background-size: 24px 24px; position: absolute; top: 12px; left: 10px;
 }
 
 .show-for-signed-in {display: none;}
