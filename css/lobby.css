@@ -65,6 +65,12 @@
 	font-size: 21px;
 	font-weight: 300;
 }
+#ncoa_providers li {
+	list-style: none;
+	width: 48%;
+	float: left;
+	margin-right: 1%;
+}
 
 #ncoa_providers .white_block_with_icon {
 	text-align: left;
