@@ -1,0 +1,121 @@
+.fullWidthHero .main_banner_ncoa {
+	background-image: url('../images/lobby-header.jpg');
+	background-color: #212145;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	height: 300px;
+	padding: 0;
+}
+
+.fullWidthHero .main_banner_ncoa h1 {
+	color: #333;
+	line-height: 50px;
+	font-size: 45px;
+	margin: 30px 0 10px 0;
+}
+
+.fullWidthHero .main_banner_ncoa h3 {
+	font-size: 18px;
+	line-height: 24px;
+	max-width: 350px;
+	margin: 0 0 20px 0;
+}
+
+#ncoa-main-bullets ul {
+	margin: 20px 40px;
+	font-size: 16px;
+}
+
+#ncoa-main-bullets {
+	padding: 50px 0;
+}
+
+#ncoa-getting-started {
+	background: none repeat scroll 0 0 #eef0f2;
+	margin: 0 0 50px;
+	padding: 60px 0;
+}
+
+#ncoa-getting-started h2 {
+	font-size: 35px;
+	margin: 0 0 10px 0;
+}
+
+#ncoa-getting-started h3 {
+	font-size: 27px;
+	margin: 0 0 40px 0;
+}
+
+#ncoa-benefits {
+	border-bottom: 1px solid #e5e5e4;
+	padding-bottom: 20px;	
+	margin-bottom: 40px;
+}
+
+#ncoa-benefits h3, #ncoa-how-it-works h3, #ncoa_providers h3 {
+	font-size: 27px;
+}
+
+#ncoa-benefits li, #ncoa-how-it-works li {
+	padding-bottom: 10px;
+}
+
+#ncoa_providers h4 {
+	font-size: 21px;
+	font-weight: 300;
+}
+
+#ncoa_providers .white_block_with_icon {
+	text-align: left;
+	min-height: 305px;
+}
+
+#ncoa_providers .white_block_with_icon p {
+	margin: 20px 0 30px 0;
+}
+
+#ncoa-faq {
+	padding: 40px 0;
+}
+
+#ncoa-faq .ui-accordion .ui-accordion-header, #ncoa-faq .ui-state-active {
+	background-color: #f3f3f3!important;
+	color: #000!important;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+#ncoa-faq .ui-accordion .ui-accordion-content {
+	padding: 40px 0;
+}
+
+#ncoa-faq .ui-accordion .ui-accordion-header {
+	background: url('../images/plus.png') 98% center no-repeat;
+}
+
+#ncoa-faq .ui-accordion .ui-state-active {
+	background: url('../images/minus.png') 98% center no-repeat;
+}
+#ncoa-faq .ui-accordion-header-icon {display: none;}
+
+#ncoa-faq .ui-widget-content {
+	border: none;
+}
+#ncoa-faq table, #ncoa-faq table thead tr th, #ncoa-faq table tbody tr td, #ncoa-faq table tr th {
+	border: none;
+	text-align: left;
+	padding: 20px 40px 20px 0;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+#ncoa-faq table tr th {
+	border-bottom: 4px solid #e5e5e4;
+	padding-bottom: 10px;
+	width: 50%;
+}
+
+#ncoa-faq table tbody tr td {
+	border-bottom: 1px solid #e5e5e4;
+}
