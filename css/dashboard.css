@@ -1,0 +1,70 @@
+/*common code - remove when moved*/ 
+.clear{clear:both;}
+.hr{border:solid #ccc;border-width:1px 0 0 0;display:block;margin:7px 0;padding:0;}
+.hide{display: none;}
+.blue_question_icon{background:url('http://canadapost.ca/cpotools/mc/assets/images/structure/blue_question_icon.gif') 0 70% no-repeat;padding-left:20px;}
+@media only screen and (max-width:40em){a.button,input.button{display:block;width:100%;}
+}
+small.error{background:none;color:#DB3A31;display:block;font-size:13px;font-style:normal;font-weight:500;margin-bottom:1rem;margin-top:-1px;padding:0;padding-left:8px;line-height:normal;}
+input.error,select.error{border:1px solid #db3a31;border-radius:2px;margin-bottom:20px;}
+div small.error{margin-top:-13px;/*white-space:nowrap;*/}
+.panel.noborder{border:none;}
+/*end of common code - remove when moved*/
+
+
+a.linktopptright{padding:0 25px 0 0;background:url('../images/linktoppt.png') no-repeat right 2px;}
+a.linktopptleft{padding:0 0 0 25px;background:url('../images/linktoppt.png') no-repeat left 2px;}
+div.inlineblock{display: block;margin: 0 0 20px 0;}
+div.inlineblock input[type="text"], div.inlineblock select{display:inline-block;width:150px;}
+span.spacer{margin: 0 12px;display: inline-block;}
+.alertcheckmark{color: #739f1c;width:auto;display: inline-block;margin: 13px 0 0 10px;}
+.alertcheckmark span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#739f1c;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
+.alertcheckmark span:before{content: "\2713 ";}
+
+
+table.ncoatable{width:100%;}
+table.ncoatable.smalltxt tr th, table.ncoatable.smalltxt tr td{font-size: 12px;}
+table.ncoatable thead tr th{padding-left:0 !important;padding-right:0 !important;margin:0 !important;vertical-align:top;}
+table.ncoatable tbody tr td{border-bottom: 1px solid #e5e5e4;height:30px;}
+table.ncoatable .placeholdernumber{height:35px;display: block;padding:9px 0 0 25px;box-sizing: border-box;}
+table.ncoatable .placeholder{color: #ccc;font-style: italic;}
+table.ncoatable input[type="text"]{padding:5px;line-height:0;font-size: 12px;height:auto;margin:0;width:240px;display: inline-block;}
+table.ncoatable input[type="text"].hide{display: none;}
+table.ncoatable span.sentnotification{color: #739f1c;width:auto;display: inline-block;margin: 0 0 0 10px;}
+table.ncoatable span.sentnotification span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#739f1c;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
+table.ncoatable span.sentnotification.hide{display: none;}
+table.ncoatable span.sentnotification span:before{content: "\2713 ";}
+
+
+.green span.circle-status,.yellow span.circle-status,.red span.circle-status, .pending span.circle-status{width:13px;height:13px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 3px 3px 0 0;float:left;}
+.green span.circle-status{background:#739f1c;border: 1px solid #739f1c;}
+.yellow span.circle-status{background:#febf2e;border: 1px solid #febf2e;}
+.red span.circle-status{background:#d82b27;border: 1px solid #d82b27;}
+.pending span.circle-status{background:#fff;border: 1px solid #ccc;background:#fff url('../images/pendinghands.png') no-repeat 4px 2px / 50% 50%;}
+
+.accordion dd table tbody tr td.green{color: #739f1c;}
+.accordion dd table tbody tr td.yellow{color: #febf2e;}
+.accordion dd table tbody tr td.red{color: #d82b27;}
+
+div.statstablehead{
+	font-size: 12px;
+	color: #fff;
+	background:#5b5b5b;
+	padding: 5px 10px;
+	font-weight: 500;
+}
+
+/*table.statstable{
+	font-size: 12px;
+}
+table.statstable thead tr th{
+	font-size: 12px;
+	text-align: left;
+	padding: 0;
+}
+table.statstable tbody tr td, .accordion dd table.statstable tbody tr td{
+	font-size: 12px;
+	text-align: left;
+	padding:0;
+	border-bottom: 1px solid #e5e5e4;
+}*/

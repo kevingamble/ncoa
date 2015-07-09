@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+
+   <!--[if lt IE 9]><html class="ie8" lang="en"><![endif]-->
+	<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCOA Dashboard</title>
+	 
+
+    <!--[if gt IE 8]><!-->
+	 <script src="http://canadapost.ca/web/assets/js/foundation5/vendor/jquery.js"></script>
+    <!--<![endif]-->
+	 
+    <!--[if lt IE 9]>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <![endif]-->
+	 
+	 
+    <!--[if lt IE 9]>
+        <script src="http://canadapost.ca/web/assets/js/lib/html5shiv/html5shiv-3.6.2.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="http://canadapost.ca/cpo/mc/ui/js/foundation3/modernizr.foundation.js"></script>
+    <![endif]--> 
+   
+      <!--[if gt IE 8]><!-->
+    <script src="http://canadapost.ca/web/assets/js/foundation5/vendor/modernizr.js"></script>
+    <!--<![endif]-->
+
+    <!--[if gt IE 8]><!-->
+      <link href="http://canadapost.ca/web/assets/css/foundation5/normalize.css" rel="stylesheet" />
+      <link href="http://canadapost.ca/web/assets/css/foundation5/foundation.min.css" rel="stylesheet" />
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+	  <link rel="stylesheet" href="http://canadapost.ca/cpo/mc/ui/css/custom_foundation3_ie8.css">
+	  <link rel="stylesheet" href="http://canadapost.ca/web/assets/css/foundation3/foundation.min.css">
+  	  <link rel="stylesheet" href="http://canadapost.ca/cpo/mc/ui/css/fdrop_ie8.css">
+		 
+    <![endif]-->
+		 
+	 <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	 <link rel="stylesheet" href="css/dashboard.css" type="text/css" media="screen">
+	 <link rel="stylesheet" href="css/vpo.css" type="text/css" media="screen">
+	 
+	 <link rel="stylesheet" href="https://www.canadapost.ca/web/assets/css/landingpages/cmb00_styling.css" type="text/css" media="screen">
+	 
+	 
+    <script src="http://canadapost.ca/web/assets/js/foundation5/vendor/modernizr.js"></script>
+	  
+  </head>
+  <body>
+    
+	 
+    <div class="row paddingtop50 paddingtop30_tablet paddingtop30_mobile">
+        <div class="large-12 medium-12 small-12 columns">
+            
+				
+				<h1>NCOA Dashboard</h1>
+				<h5><strong>Hello Jack.</strong> Welcome to your Mover Update Dashboard.</h5>
+				
+				
+				<dl class="accordion" data-accordion="data-accordion">
+				  <dd class="accordion-navigation active">
+				    <a href="#panel1b">Validate Client Terms of Use</a>
+				    <div id="panel1b" class="content active">
+				      	<p>Prior to processing Mover Update Data you need to ensure that your customer has an active Mover Update Terms of Use ID.</p>
+							<p>Search by a single ID or download all IDs below.</p>
+							<p>If an ID is expired or cannot be found, please inform your customer to create a new Terms of Use ID. If you customer just signed up for an ID and the ID is pending, please allow 1-3 business days for a pending ID to become active.</p>
+							
+							<p><strong>Enter Terms for Use ID</strong></p>
+							
+							<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+								
+								<label for="termsofuseid">Start entering ID eg: EU123456789</label>
+								<div class="row">
+									<div class="columns large-4 medium-6 small-12">
+										<input type="text" name="" value="" id="termsofuseid">
+									</div>
+									<div class="columns large-8 medium-6 small-12">
+										<input type="submit" class="button light" value="Search">
+									</div>
+								</div>
+							</form>
+							
+						<table class="marginbottom40 ncoatable">
+								<thead>
+								    <tr>
+										<th class="text-left">Terms of Use ID</th>
+										<th class="text-left">Expiry Date</th>
+										<th class="text-left">Status</th>
+									</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>EU123456789</td>
+										<td>2015-05-21</td>
+										<td class="green"><span class="circle-status"></span> Active</td>
+									</tr>
+								</tbody>
+							</table>
+							
+							<a href="#" class="button" data-reveal-id="myModal">Create your first NCOA Terms of Use</a>
+							
+				    </div>
+				  </dd>
+				  <dd class="accordion-navigation">
+				    <a href="#panel2b">Upload &amp; View Processing Reports</a>
+				    <div id="panel2b" class="content">
+				      
+						<p>Upload and view your monthly processing reports.</p>
+						<p><strong>Upload Monthly Processing Report:</strong></p>
+						
+						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+							<label for="browsereports">Click here to browse reports</label>
+							<div class="row">
+								<div class="columns large-4 medium-6 small-12">
+									<input type="text" name="" value="" id="browsereports">
+								</div>
+								<div class="columns large-4 medium-6 small-12">
+									<input type="submit" class="button light" value="Browse">
+									<input type="submit" class="button marginleft10" value="Upload">
+								</div>
+								<div id="columns large-4 medium-6 small-12">
+									<p class="alertcheckmark"><span></span>Report Uploaded</p>
+								</div>
+							</div>
+						</form>
+						
+						<span class="hr marginbottom20"></span>
+						
+						<p><strong>Select Date Range to view Processing Report Summary</strong></p>
+						
+						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+							<div class="inlineblock">
+								<input type="text" name="" value="11-03-2014" id=""><span class="spacer">to</span><input type="text" name="" value="11-03-2014" id="" >
+								<input type="submit" class="button marginleft10 marginright10" value="Show Summary">
+								<input type="submit" class="button light" value="Download full processing report">
+							</div>
+							
+							
+							
+						</form>
+						
+						
+						
+						<div class="statstablehead">
+							NCOA Processing Report - &lt;SB name&gt; for YYYY-MM to YYYY-MM
+						</div>
+						<table class="ncoatable smalltxt">
+							
+							<thead>
+							<tr>
+								<th class="text-left">Month (yyyy-mm)</th>
+								<th class="text-left">Total Records Processed</th>
+								<th class="text-left">Exclusions</th>
+								<th class="text-left">Net Records Processed</th>
+								<th class="text-left">Total Matches</th>
+								<th class="text-left">% Total Matches</th>
+								<th class="text-left">Total Nixies</th>
+								<th class="text-left">% Total Nixies</th>
+								<th class="text-left">Net Matches</th>
+								<th class="text-left">Net % Matches</th>
+								<th class="text-left">Net Nixies</th>
+								<th class="text-left">Net % Nixies Matched</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							</tbody>
+						</table>
+						
+						
+						
+						
+				    </div>
+				  </dd>
+				  <dd class="accordion-navigation">
+				    <a href="#panel3b">View Client Usage Reports</a>
+				    <div id="panel3b" class="content">
+				      
+						<p>View your clients' monthly data usage.</p>
+						<label for="selectyear" class="marginbottom20"><strong>Select Year to view Client Usage Report Summary</strong></label>
+						
+						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+							<div class="inlineblock">
+							<select name="some_name" id="selectyear" class="marginright10" onchange="" size="1">
+								<option value="option1">Year</option>
+								<option value="option2">1992</option>
+							</select>
+							<input type="submit" class="button light marginright10" value="Show Summary">
+							<input type="submit" class="button" value="Download Full Client Usage Report">
+							</div>
+						</form>
+						
+						
+						<div class="statstablehead">
+							NCOA Client Usage Report - &lt;SB name&gt; for period YYYY-MM to YYYY-MM
+						</div>
+						<table class="ncoatable smalltxt">
+							
+							<thead>
+							<tr>
+								<th class="text-left">TOU ID</th>
+								<th class="text-left">Business<br />Name<br />(TOU)</th>
+								<th class="text-left">Jan-14</th>
+								<th class="text-left">Feb-14</th>
+								<th class="text-left">Mar-14</th>
+								<th class="text-left">Apr-14</th>
+								<th class="text-left">May-14</th>
+								<th class="text-left">Jun-14</th>
+								<th class="text-left">Jul-14</th>
+								<th class="text-left">Aug-14</th>
+								<th class="text-left">Sept-14</th>
+								<th class="text-left">Oct-14</th>
+								<th class="text-left">Nov-14</th>
+								<th class="text-left">Dec-14</th>
+								<th class="text-left">Total Net<br />Records<br />Processed</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>TOU ID</td>
+								<td>SB Name</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>30,000,000</td>
+							</tr>
+						</tbody>
+						</table>
+						
+						
+				    </div>
+				  </dd>
+				  
+				  <dd class="accordion-navigation">
+				    <a href="#panel4b">Manage my Terms of Use</a>
+				    <div id="panel4b" class="content">
+				      
+						<p>Click on an ID to view your agreed upon NCOA Terms of Use.</p>
+						
+						
+						
+						<form action="dashboard-02-manage_my_terms_of_use_submit" method="get" accept-charset="utf-8">
+						<table class="marginbottom40 ncoatable">
+							<thead>
+							    <tr>
+									<th class="text-left">Terms of Use ID</th>
+									<th class="text-left">Secondary Contact</th>
+									<th class="text-left">Creation Date</th>
+									<th class="text-left">Expiry Date</th>
+									<th class="text-left">Status</th>
+									<th></th>
+								</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a class="linktopptleft" href='#'>SB5234567890</a></td>
+									<td>
+										<span class="emailholder">jane.smith@mailposte.canadapost.com</span>
+										<input type="text" class="hide" name="" value="" id="">
+										<span class="sentnotification hide"><span></span> Sent</span>
+										<a class="marginleft8 updatecontact" href="#">Update</a></td>
+									<td class="text-center">2014-02-22</td>
+									<td class="text-center">2014-02-22</td>
+									<td class="green"><span class="circle-status"></span> Active</td>
+									<td class="text-right"><a class="medium button" href="#">Renew</a></td>
+								</tr>
+								<tr>
+									<td><a class="linktopptleft" href='#'>SB5234567890</a></td>
+									<td>
+										<span class="emailholder placeholder">unassigned</span>
+										<input type="text" class="hide" name="" value="" id="">
+										<span class="sentnotification hide"><span></span> Sent</span>
+										<a class="marginleft8 updatecontact" href="#">Update</a>
+									</td>
+									<td class="text-center">2014-02-22</td>
+									<td class="text-center">2014-02-22</td>
+									<td class="yellow"><span class="circle-status"></span> Inactive</td>
+									<td class="text-right"><a class="medium button" href="#">Renew</a></td>
+								</tr>
+								<tr>
+									<td><a class="linktopptleft" href='#'>SB5234567890</a></td>
+									<td>
+										<span class="emailholder">lily.kim@acme.com</span>
+										<input type="text" class="hide" name="" value="" id="">
+										<span class="sentnotification hide"><span></span> Sent</span>
+										<a class="marginleft8 updatecontact" href="#">Update</a>
+									</td>
+									<td class="text-center">2014-02-22</td>
+									<td class="text-center">2014-02-22</td>
+									<td class="red"><span class="circle-status"></span> Denied</td>
+									<td class="text-right"><a class="medium button" href="#">Renew</a></td>
+								</tr>
+								<tr>
+									<td><span class="placeholdernumber">Pending</span></td>
+									<td>
+										<span class="emailholder">don.eng@acme.com</span>
+										<input type="text" class="hide" name="" value="" id="">
+										<span class="sentnotification hide"><span></span>Sent</span>
+										<a class="marginleft8 updatecontact" href="#">Update</a>
+									</td>
+									<td class="text-center">2014-02-22</td>
+									<td class="text-center">-</td>
+									<td class="pending"><span class="circle-status"></span> Pending</td>
+									<td class="text-right"><a class="medium button hide" href="#">Renew</a></td>
+								</tr>
+							</tbody>
+						</table>
+						</form>
+						
+						<a href="#" class="button light">Create NCOA Terms of Use</a>
+						
+				    </div>
+				  </dd>
+				  
+				</dl>
+				
+				
+				
+				
+				<span class="hr marginbottom30 margintop50"></span>
+				
+			<div class="row" data-equalizer="data-equalizer">
+				<div class="columns large-6 medium-6 small-12">
+					<div class="panel noborder" data-equalizer-watch="data-equalizer-watch">
+						<h5>Terms of Use Renewal Emails &amp; Notifications</h5>
+						<p>NCOA sends out annual reminders to renew your own Terms of Use.</p>
+						<p><a class="blueLink_arrow" href='#'>Modify</a></p>
+					</div>
+				</div>
+				<div class="columns large-6 medium-6 small-12">
+					<div class="panel noborder" data-equalizer-watch="data-equalizer-watch">
+						<h5>Need Help?</h5>
+						<p>If you have any questions about the online tools or mover data, contact the Mover Update Administrator at <a href="mailto:noca@canadapost.ca">noca@canadapost.ca</a></p>
+					</div>
+				</div>
+			</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+        </div>
+    </div>
+	 
+    
+
+    
+    
+      <!--[if gt IE 8]><!-->
+            <script src="http://canadapost.ca/web/assets/js/foundation5/foundation.min.js"></script>
+            <script src="http://canadapost.ca/web/assets/js/foundation5/vendor/foundation.equalizer.js"></script>
+		<!--<![endif]-->  
+					<script src="js/ncoa-js.js" type="text/javascript" charset="utf-8"></script>
+			<!--[if gt IE 8]><!-->
+            <script>
+              $(document).foundation();
+				  
+				  
+				  //temp code
+				  $(document).ready(function() {
+					  $('a.updatecontact').click(function(){
+						  var $emailholder = $(this).parent().find('span.emailholder');
+						  var $editemailobj = $(this).parent().find('input');
+						  var $checkmark = $(this).parent().find('span.sentnotification');
+						  if($emailholder.hasClass('hide')){
+ 							  $emailholder.removeClass('hide').html($editemailobj.val());
+							  $checkmark.removeClass('hide');
+							  $(this).addClass('hide');
+ 							  $editemailobj.addClass('hide');
+						  }else{
+							  $emailholder.addClass('hide');
+							  $editemailobj.removeClass('hide').val($emailholder.html());
+ 						  }
+						  return false;
+					  });
+				  });
+				  
+				  
+				  
+            </script>
+		<!--<![endif]-->        
+  </body>
+</html>
