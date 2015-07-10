@@ -18,8 +18,7 @@ div.inlineblock{display: block;margin: 0 0 20px 0;}
 div.inlineblock input[type="text"], div.inlineblock select{display:inline-block;width:150px;}
 span.spacer{margin: 0 12px;display: inline-block;}
 .alertcheckmark{color: #739f1c;width:auto;display: inline-block;margin: 13px 0 0 10px;}
-.alertcheckmark span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#739f1c;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
-.alertcheckmark span:before{content: "\2713 ";}
+.alertcheckmark span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#87ae20 url('../images/checkmark.jpg') no-repeat -1px 0px;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
 
 
 table.ncoatable{width:100%;}
@@ -31,9 +30,8 @@ table.ncoatable .placeholder{color: #ccc;font-style: italic;}
 table.ncoatable input[type="text"]{padding:5px;line-height:0;font-size: 12px;height:auto;margin:0;width:240px;display: inline-block;}
 table.ncoatable input[type="text"].hide{display: none;}
 table.ncoatable span.sentnotification{color: #739f1c;width:auto;display: inline-block;margin: 0 0 0 10px;}
-table.ncoatable span.sentnotification span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#739f1c;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
+table.ncoatable span.sentnotification span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#87ae20 url('../images/checkmark.jpg') no-repeat -1px 0px;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
 table.ncoatable span.sentnotification.hide{display: none;}
-table.ncoatable span.sentnotification span:before{content: "\2713 ";}
 
 
 .green span.circle-status,.yellow span.circle-status,.red span.circle-status, .pending span.circle-status{width:13px;height:13px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 3px 3px 0 0;float:left;}
