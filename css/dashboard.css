@@ -33,6 +33,13 @@ table.ncoatable span.sentnotification{color: #739f1c;width:auto;display: inline-
 table.ncoatable span.sentnotification span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#87ae20 url('../images/checkmark.jpg') no-repeat -1px 0px;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
 table.ncoatable span.sentnotification.hide{display: none;}
 
+table.ncoatable tbody tr td .button {
+	font-size: 14px;
+	max-width: 100px;
+	padding: 2px 15px;
+	margin-left: 10px;
+}
+
 
 .green span.circle-status,.yellow span.circle-status,.red span.circle-status, .pending span.circle-status{width:13px;height:13px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 3px 3px 0 0;float:left;}
 .green span.circle-status{background:#739f1c;border: 1px solid #739f1c;}
@@ -40,9 +47,9 @@ table.ncoatable span.sentnotification.hide{display: none;}
 .red span.circle-status{background:#d82b27;border: 1px solid #d82b27;}
 .pending span.circle-status{background:#fff;border: 1px solid #ccc;background:#fff url('../images/pendinghands.png') no-repeat 4px 2px / 50% 50%;}
 
-.accordion dd table tbody tr td.green{color: #739f1c;}
-.accordion dd table tbody tr td.yellow{color: #febf2e;}
-.accordion dd table tbody tr td.red{color: #d82b27;}
+.accordion dd table tbody tr td .green{color: #739f1c;}
+.accordion dd table tbody tr td .yellow{color: #febf2e;}
+.accordion dd table tbody tr td .red{color: #d82b27;}
 
 div.statstablehead{
 	font-size: 12px;
@@ -66,3 +73,66 @@ table.statstable tbody tr td, .accordion dd table.statstable tbody tr td{
 	padding:0;
 	border-bottom: 1px solid #e5e5e4;
 }*/
+
+@media only screen and (max-width:480px){
+	table.ncoatable tr th {
+		display: none;
+	}
+	
+	table.ncoatable thead {
+		border: none
+	}
+	
+	table.ncoatable tr {
+		width: 100%;
+		background-color: #eaf9fb;
+		border: 1px solid #ccc;
+	}
+	
+	table.ncoatable tbody tr td {
+		width: 100%;
+		float: left;
+		border: none;
+		margin: 15px 5px;
+		display: table;
+	}
+	
+	table.ncoatable tbody tr td.ncoa-tou:before, table.ncoatable tbody tr td.ncoa-secondary:before, table.ncoatable tbody tr td.ncoa-creation:before, table.ncoatable tbody tr td.ncoa-expiry:before, table.ncoatable tbody tr td.ncoa-status:before {
+		content: 'TERMS OF USE ID';
+		font-weight: bold;
+		width: 100%;
+		float: left;
+		margin-bottom: 8px;
+	}
+	
+	table.ncoatable tbody tr td.ncoa-tou:before {
+		content: 'TERMS OF USE ID';
+	}
+	
+	table.ncoatable tbody tr td.ncoa-secondary:before {
+		content: 'ALTERNATE CONTACT';
+	}
+	
+	table.ncoatable tbody tr td.ncoa-creation:before {
+		content: 'CREATION DATE';
+	}
+	
+	table.ncoatable tbody tr td.ncoa-expiry:before {
+		content: 'EXPIRY DATE';
+	}
+	
+	table.ncoatable tbody tr td.ncoa-status:before {
+		content: 'STATUS';
+	}
+	
+	table.ncoatable tbody tr td.ncoa-creation, table.ncoatable tbody tr td.ncoa-expiry {
+		width: 45%;
+	}
+	
+	table.ncoatable tbody tr td .button {
+		float: right;
+		margin-right: 40px;
+	}
+	
+	
+}
