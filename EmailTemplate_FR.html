@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="noindex, nofollow" name="robots" />
+    <title>Postes Canada</title>
+    
+    
+    <style type="text/css">
+    /* Based on Lyris Reset INLINE: Yes. */
+    /* Client-specific Styles */
+    
+    #outlook a {
+        padding: 0;
+    }
+    /* Force Outlook to provide a "view in browser" menu link. */
+    
+    body {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+    
+    .ExternalClass {
+        width: 100%;
+    }
+    /* Force Hotmail to display emails at full width */
+    
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+        line-height: 100%;
+    }
+    /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+    
+    #backgroundTable {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        line-height: 100% !important;
+    }
+    /* End reset */
+    /* Some sensible defaults for images
+        Bring inline: Yes. */
+    
+    img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+    }
+    
+    a img {
+        border: none;
+    }
+    
+    .image_fix {
+        display: block;
+    }
+    /* Yahoo paragraph fix
+        Bring inline: Yes. */
+    
+    p {
+        margin: 1em 0;
+    }
+    /* Hotmail header color reset
+        Bring inline: Yes. */
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #333333 !important;
+    }
+    
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+        color: #107CC0 !important;
+    }
+    
+    h1 a:active,
+    h2 a:active,
+    h3 a:active,
+    h4 a:active,
+    h5 a:active,
+    h6 a:active {
+        color: red !important;
+        /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    }
+    
+    h1 a:visited,
+    h2 a:visited,
+    h3 a:visited,
+    h4 a:visited,
+    h5 a:visited,
+    h6 a:visited {
+        color: purple !important;
+        /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    }
+    /* Outlook 07, 10 Padding issue fix
+        Bring inline: No.*/
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    table td {
+        border-collapse: collapse;
+    }
+    /* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
+        Bring inline: Yes. */
+    
+    a {
+        color: #107CC0;
+    }
+    
+    ul {
+        padding: 0 0 10px 20px;
+    }
+    
+    li {
+        padding-bottom: 3px;
+    }
+    /***************************************************
+        ****************************************************
+        MOBILE TARGETING
+        ****************************************************
+        ***************************************************/
+    
+    @media only screen and (max-device-width: 480px) {
+        /* Part one of controlling phone number linking for mobile. */
+        
+        a[href^="tel"],
+        a[href^="sms"] {
+            text-decoration: none;
+            color: blue;
+            /* or whatever your want */
+            
+            pointer-events: none;
+            cursor: default;
+        }
+        .mobile_link a[href^="tel"],
+        .mobile_link a[href^="sms"] {
+            text-decoration: default;
+            color: orange !important;
+            pointer-events: auto;
+            cursor: default;
+        }
+    }
+    /* More Specific Targeting */
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* You guessed it, ipad (tablets, smaller screens, etc) */
+        /* repeating for the ipad */
+        
+        a[href^="tel"],
+        a[href^="sms"] {
+            text-decoration: none;
+            color: blue;
+            /* or whatever your want */
+            
+            pointer-events: none;
+            cursor: default;
+        }
+        .mobile_link a[href^="tel"],
+        .mobile_link a[href^="sms"] {
+            text-decoration: default;
+            color: orange !important;
+            pointer-events: auto;
+            cursor: default;
+        }
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        /* Put your iPhone 4g styles in here */
+    }
+    /* Android targeting */
+    
+    @media only screen and (-webkit-device-pixel-ratio: .75) {
+        /* Put CSS for low density (ldpi) Android layouts in here */
+    }
+    
+    @media only screen and (-webkit-device-pixel-ratio: 1) {
+        /* Put CSS for medium density (mdpi) Android layouts in here */
+    }
+    
+    @media only screen and (-webkit-device-pixel-ratio: 1.5) {
+        /* Put CSS for high density (hdpi) Android layouts in here */
+    }
+    /* end Android targeting */
+    </style>
+    <!-- Targeting Windows Mobile -->
+    <!--[if IEMobile 7]>
+    <style type="text/css">
+    
+    </style>
+    <![endif]-->
+    <!-- ***********************************************
+    ****************************************************
+    END MOBILE TARGETING
+    ****************************************************
+    ************************************************ -->
+    <!--[if gte mso 9]>
+        <style>
+        /* Target Outlook 2007 and 2010 */
+        </style>
+    <![endif]-->
+    
+    
+    
+</head>
+
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+    <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+        <tr>
+            <td valign="top">
+                <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;" id="backgroundTable">
+                    <tr>
+                        <td height="40">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            
+                            
+                            <table width="760" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" id="Table_01">
+                                
+                                <tr>
+                                    <td style="border-collapse: collapse;" valign="top" height="20" bgcolor="#da2a1b">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-collapse: collapse;" valign="top" height="20" bgcolor="#f5f5f5">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-collapse: collapse;" valign="top" height="40" bgcolor="#f5f5f5">
+                                        <table width="760" height="40" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                                            <td width="30" style="border-collapse: collapse;" valign="top">&nbsp;</td>
+                                            <td width="160" style="border-collapse: collapse;" valign="top">
+                                                <a href="https://www.postescanada.ca" target="_blank"><img src="http://www.canadapost.ca/cpo/mc/emailcampaigns/template/canada_post_logo_fr.jpg" width="160" height="40" alt="Canada Post - Postes Canada" align="left" border="0" style="display: block; margin: 0; padding: 0;"></a>
+                                            </td>
+                                            <td width="540" style="border-collapse: collapse;" valign="top">&nbsp;</td>
+                                            <td width="30" style="border-collapse: collapse;" valign="top">&nbsp;</td>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-collapse: collapse;" valign="top" height="20" bgcolor="#f5f5f5">&nbsp;</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td colspan="3" style="border-collapse: collapse;" valign="top">
+                                        <table width="760" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_03">
+                                            
+                                            
+                                            <tr>
+                                                <td width="30">&nbsp;</td>
+                                                <td width="700">
+                                                    <font face="Helvetica, Arial, sans-serif"><span style="font-size: 14px; line-height: 20px; color:#424242;">
+                                                    Content<br/>
+                                                    Content<br/>
+                                                    Content<br/>
+                                                    Content<br/>
+                                                    Content<br/>
+                                                    Content<br/>
+                                                    </span>
+                                                    </font>
+                                                </td>
+                                                <td width="30">&nbsp;</td>
+                                            </tr>
+                                            
+
+                                            <tr>
+                                                <td colspan="3" height="40">&nbsp;</td>
+                                            </tr>
+                                            
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                        <td colspan="3">
+                            <table width="760" bgcolor="#f5f5f5" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_08" style="border-top: #D6D6D6 1px solid;">
+                                <tr height="50">
+                                    
+                                    <td width="60">&nbsp;</td>
+                                    <td align="left">
+                                        <font face="Helvetica, Arial, sans-serif"><a href="https://www.canadapost.ca/cpotools/apps/fpo/personal/findPostOffice?LOCALE=fr" style="color:#333333; text-decoration:none; font-size:13px" target="_blank">Trouver un bureau de poste</a></font>
+                                    </td>
+                                    <td align="left">
+                                        <font face="Helvetica, Arial, sans-serif"><a href="https://www.canadapost.ca/cpo/mc/personal/postalcode/fpc.jsf?LOCALE=fr" style="color:#333333; text-decoration:none; font-size:13px" target="_blank">Trouver un code postal</a></font>
+                                    </td>
+                                    <td align="left">
+                                        <font face="Helvetica, Arial, sans-serif"><a href="http://www.postescanada.ca/cpotools/apps/track/personal/findByTrackNumber?LOCALE=fr" style="color:#333333; text-decoration:none; font-size:13px" target="_blank">Rep&eacute;rer</a></font>
+                                    </td>
+                                    <td align="left">
+                                        <font face="Helvetica, Arial, sans-serif"><a href="https://www.canadapost.ca/cpotools/apps/far/business/findARate?LOCALE=fr" style="color:#333333; text-decoration:none; font-size:13px" target="_blank">Trouver un tarif</a></font>
+                                    </td>
+                                    <td align="left">
+                                        <font face="Helvetica, Arial, sans-serif"><a href="https://www.canadapost.ca/web/fr/pages/support/default.page" style="color:#333333; text-decoration:none; font-size:13px" target="_blank">Soutien</a></font>
+                                    </td>
+                                    <td align="left">
+                                        <font face="Helvetica, Arial, sans-serif"><a href="https://www.canadapost.ca/web/fr/blogs/consumer/list.page" style="color:#333333; text-decoration:none; font-size:13px" target="_blank">Blogues</a></font>
+                                    </td>
+                                    <td width="60">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8" height="20" style="border-top: #D6D6D6 1px solid;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <table width="760" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_09">
+                                            <tr>
+                                                <td width="30">&nbsp;</td>
+                                                <td width="605">
+                                                    <font face="Helvetica, Arial, sans-serif"><span style="font-size: 11px; color: #8b8b8b">&copy; 2015 Soci&eacute;t&eacute; canadienne des postes<br /><br />
+                                                    <a href="https://www.canadapost.ca/web/fr/kb/details.page?article=legal_terms_of_use&cattype=kb&cat=generalinquiries&subcat=generalinformation" style="color:#087cc0; text-decoration:none;" target="_blank">Avis juridiques</a> &nbsp;|&nbsp; <a href="https://www.canadapost.ca/web/fr/kb/details.page?article=privacy_statement_fo&cattype=kb&cat=generalinquiries&subcat=generalinformation" target="_blank" style="color:#087cc0; text-decoration:none;">Confidentialit&eacute;</a> </span></font>
+                                                </td>
+                                                <td width="95" valign="top">
+                                                    <img src="https://www.canadapost.ca/cpo/mc/emailcampaigns/template/canada.jpg" width="95" height="27" alt="" border="0" style="display: block;"></a>
+                                                </td>
+                                                <td width="30">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8" height="20">&nbsp;</td>
+                                            </tr>
+                                            <!-- removed for WEB version -->
+                                            <!--<tr>
+                                                <td width="30">&nbsp;</td>
+                                                <td colspan="6">
+                                                                                                        
+                                                    <font face="Helvetica, Arial, sans-serif"><span style="font-size: 13px;  line-height: 16px; color: #8b8b8b">
+                                                    <strong>D&eacute;sabonnement</strong><br />
+                                                    Si pour une raison quelconque vous souhaitez vous d&eacute;sabonner, cliquez simplement sur le lien suivant: Désabonner.</span></font>
+                                                </td>
+                                                <td width="30">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8" height="20">&nbsp;</td>
+                                            </tr>
+                                             -->
+                                            <tr>
+                                                <td width="30">&nbsp;</td>
+                                                <td colspan="6">
+                                                    <font face="Helvetica, Arial, sans-serif"><span style="font-size: 11px;  line-height: 14px; color: #8b8b8b">
+                                                    <span style="font-size:13px; line-height: 15px;"> 
+                                                    <!-- unsubscribe-->
+                                                    <strong>Désabonnement</strong><br/>
+                                                    Si pour une raison quelconque vous souhaitez vous désabonner, cliquez simplement sur le lien suivant: Désabonner</span>.
+                                                    <br /><br/>
+                                                    <strong>S&eacute;curit&eacute; et confidentialit&eacute;</strong><br />
+                                                    Postes Canada prot&egrave;ge votre s&eacute;curit&eacute; et votre vie priv&eacute;e. Nous ne vous demanderons jamais de renseignements personnels (comme un mot de passe ou un num&eacute;ro de carte de cr&eacute;dit) dans un courriel. Si vous recevez une telle demande, n&#39;y r&eacute;pondez pas. <a href="https://www.canadapost.ca/web/fr/kb/details.page?article=privacy_statement_fo&cattype=kb&cat=generalinquiries&subcat=generalinformation" target="_blank" style="color:#087cc0; text-decoration:none;">Lisez notre politique de confidentialit&eacute;</a>.<br />
+                                                    <br /><strong>Ne r&eacute;pondez pas</strong><br />
+                                                    Les r&eacute;ponses &agrave; ce courriel ne seront pas lues et ne recevront pas de r&eacute;ponse. N&#39;h&eacute;sitez pas &agrave; <a href="https://www.canadapost.ca/web/fr/pages/support/default.page" target="_blank" style="color:#087cc0; text-decoration:none;" >communiquer avec nous</a> si vous avez des questions ou des commentaires.
+                                                    <br/><br/>
+                                                    <a href="https://www.canadapost.ca/cpo/mc/default.jsf?LOCALE=fr" style="color:#087cc0; text-decoration:none;" target="_blank">www.postescanada.ca</a>, 2701 PROM Riverside, Ottawa ON K1A 0B1</span>
+                                                    </font>
+                                                </td>
+                                                <td width="30">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8" height="40">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="40">&nbsp;</td> 
+                    </tr>
+        </table>
+</body>
+</html>
