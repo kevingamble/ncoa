@@ -51,11 +51,20 @@
   <body>
 
 
-	<div id="drop1" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div id="drop1" data-dropdown-content class="f-dropdown content small" aria-hidden="true" tabindex="-1">
+	  <p>NCOA Terms of Use will be accepted using the following information:</p>
+	  <ul class="no-bullet">
+	  	  <li>First name: John</li>
+	  	  <li>Last name: Doe</li>
+	  	  <li>Job title: CFO</li>
+	  	  <li>Email address: john.doe@acme.com</li>
+	  	  <li>Telephone: 416-555-5555</li>
+	  	  <li>Address: Address Line 1 Address Line 2 City Province/State Postal/Zip Country</li>
+	  	  </ul>
 	</div>
-	<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div id="drop2" data-dropdown-content class="f-dropdown content medium" aria-hidden="true" tabindex="-1">
+		<p>Adding an alternate contact to these NCOA Terms of Use delegates your authority to that contact to renew your agreement to these terms if you are unavailable.</p>
+		<p>The alternate contact receives an email with a prompt to create a Canada Post business profile or to sign in to access your Terms of Use, and will receive renewal reminder emails before the terms expire.</p>
 	</div>
 	
 	
@@ -84,7 +93,7 @@
 				
 				<div class="alert-box msgError marginbottom30" data-alert="data-alert">
 					<code><span>x</span></code>
-					<p>Error message holder - TEMP, You must agree to all terms</p>
+					<p>This is a required field.</p>
 				</div>
 				
 				<a class="blue_question_icon right" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" href='#'>&nbsp;<span class="hidden-for-small-only">Your Profile Information</span></a>				
@@ -95,19 +104,20 @@
 				
 				<form action="index_submit" method="get" accept-charset="utf-8">
 					
-					<p><strong>1.  Enter your legal business name</strong></p>
-					<label for="business-name">Enter Your Legal Business Name</label>
+					<p class="nomargin"><strong>1.  Enter your legal business name</strong></p>
+					<label class='hide' for="business-name">Enter Your Legal Business Name</label>
 					<div class="row">
 						<div class="columns large-4">
 							<input type="text" class="error" name="business-name" value="" id="business-name">
-							<div class="msgError"><small class="error">Required Field</small></div>
+							<div class="msgError"><small class="error">This is a required field.</small></div>
 						</div>
 					</div>
 					
 					<span class="hr marginbottom15"></span>
 					
-					<p><strong>2.  Assign an alternate contact</strong></p>
-					<label for="alternate-contact">In case you are unavailable to renew, you can assign an alternate contact to act as your backup.</label>
+					<p class="smallmargin"><strong>2.  Assign an alternate contact</strong></p>
+					<p>In case you are unavailable to renew, you can assign an alternate contact to act as your backup.</p>
+					<label for="alternate-contact">Alternate Contact Email Address (optional)</label>
 					<div class="row">
 						<div class="columns large-4 medium-10 small-10">
 							<input type="text" name="alternate-contact" value="" id="alternate-contact">
@@ -119,31 +129,34 @@
 					
 					<span class="hr marginbottom15"></span>
 				
-					<p><strong>3.  Select your user type</strong></p>
-					<label for="user-type">Please select the user type that best matches your intended use of NCOA Mover Date services.</label>
+					<p class="smallmargin"><strong>3.  Select your user type</strong></p>
+					<label for="user-type">Please select the user type that best matches your intended use of NCOA Mover Data services:</label>
 					
+					
+					<!-- sample error - remove class="error" for non error state  -->
+					<!-- questions call aaron 613 218 8782 -->
 					<ul class='radiogroupholder'>
-						<li>
+						<li class="error">
 							<input type="radio" id="usertype-enduser" name="usertype" value="enduser">
 							<label for="usertype-enduser">
 								<span></span>
-								<strong>I am an End-User</strong><br/>
+								<strong>I am an End-User.</strong><br/>
 								I will be using a third-party software or service to apply NCOA Mover Data updates to my own customer database or mailing list. I will not be using NCOA as part of any commercial service offering.
 							</label>
 						</li>
-						<li>
+						<li class="error">
 							<input type="radio" id="usertype-serviceprovider" name="usertype" value="serviceprovider">
 							<label for="usertype-serviceprovider">
 								<span></span>
-								<strong>I am a Service Provider</strong><br/>
-								I will be providing commercial NCOA Mover Data services to the market, or using NCOA as part of a commercial service offering. (As a Service Provider, you can also use NCOA to update your own customer data and lists)
+								<strong>I am a Service Provider.</strong><br/>
+								I will be providing commercial NCOA Mover Data services to the market, or using NCOA as part of a commercial service offering. (As a Service Provider, you can also use NCOA to update your own customer data and lists).
 							</label>
 						</li>
-						<li>
+						<li class="error">
 							<input type="radio" id="usertype-servicebereau" name="usertype" value="servicebereau">
 							<label for="usertype-servicebereau">
 								<span></span>
-								<strong>I am a Service Bureau</strong> licensing NCOA Mover Data directly from Canada Post.
+								<strong>I am a Service Bureau.</strong> I will be licensing NCOA Mover Data directly from Canada Post.
 							</label>
 						</li>
 					</ul>

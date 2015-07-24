@@ -4,9 +4,12 @@
 .blue_question_icon{background:url('http://canadapost.ca/cpotools/mc/assets/images/structure/blue_question_icon.gif') 0 70% no-repeat;padding-left:20px;}
 @media only screen and (max-width:40em){a.button,input.button{display:block;width:100%;}
 }
-small.error{background:none;color:#DB3A31;display:block;font-size:13px;font-style:normal;font-weight:500;margin-bottom:1rem;margin-top:-1px;padding:0;padding-left:8px;line-height:normal;}
+small.error, .error small.error{background:none;color:#f04124;display:block;font-size:13px;font-style:normal;font-weight:500;margin-bottom:1rem;margin-top:-1px;padding:0;padding-left:8px;line-height:normal;}
 input.error,select.error{border:1px solid #db3a31;border-radius:2px;margin-bottom:20px;}
 div small.error{margin-top:-13px;/*white-space:nowrap;*/}
+p.smallmargin{margin: 0 0 5px 0;}
+.agree-checkbox-holder small{margin: 0 0 0 35px;}
+.footnote{font-size: 12px;color: #373737;margin: 10px 0 0 0;}
 /*end of common code - remove when moved*/
 
 
@@ -64,6 +67,7 @@ div.agree-checkbox-holder [type="checkbox"]:not(:checked),div.agree-checkbox-hol
 div.agree-checkbox-holder [type="checkbox"]:not(:checked) + label,div.agree-checkbox-holder [type="checkbox"]:checked + label{position:relative;padding-left:35px;cursor:pointer;}
 div.agree-checkbox-holder [type="checkbox"]:not(:checked) + label:before,
 div.agree-checkbox-holder [type="checkbox"]:checked + label:before{content:'';position:absolute;left:0;top:2px;width:20px;height:20px;border:2px solid #ccc;background:#fff;}
+div.agree-checkbox-holder.error [type="checkbox"]:not(:checked) + label:before{border:2px solid red;}
 div.agree-checkbox-holder [type="checkbox"]:not(:checked) + label:after,
 div.agree-checkbox-holder [type="checkbox"]:checked + label:after{content:'✔';position:absolute;top:-5px;left:3px;font-size:22px;color:#87ae20;transition:all .2s;}
 div.agree-checkbox-holder [type="checkbox"]:not(:checked) + label:after{opacity:0;transform:scale(0);}
@@ -74,4 +78,5 @@ div.agree-checkbox-holder [type="checkbox"]:disabled:checked + label:after{color
 div.agree-checkbox-holder [type="checkbox"]:disabled + label{color:#aaa;}
 div.agree-checkbox-holder [type="checkbox"]:checked:focus + label:before,
 div.agree-checkbox-holder [type="checkbox"]:not(:checked):focus + label:before{border:2px solid #087cc0;}
+
 div.agree-checkbox-holder div small.error{margin-top:5px;}
