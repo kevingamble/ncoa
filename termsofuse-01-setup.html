@@ -54,7 +54,8 @@
 	<div id="drop1" data-dropdown-content class="f-dropdown content small" aria-hidden="true" tabindex="-1">
 	  <p>NCOA Terms of Use will be accepted using the following information:</p>
 	  <ul class="no-bullet">
-	  	  <li>First name: John</li>
+	  	  <li>Business name: Acme Inc.</li>
+		  <li>First name: John</li>
 	  	  <li>Last name: Doe</li>
 	  	  <li>Job title: CFO</li>
 	  	  <li>Email address: john.doe@acme.com</li>
@@ -98,14 +99,14 @@
 				
 				<a class="blue_question_icon right" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" href='#'>&nbsp;<span class="hidden-for-small-only">Your Profile Information</span></a>				
 				
-				<h4><strong>Hello Jack.</strong> You are signed in to your Canada Post business profile.</h4> 
-				<p>To agree to an NCOA Terms of Use, please complete the following information:</p>
+				<h4><strong>Hello Jack.</strong> You are signed into your Canada Post business profile.</h4> 
+				<p>To agree to the NCOA Terms of Use, please complete the following information:</p>
 				
 				
 				<form action="index_submit" method="get" accept-charset="utf-8">
 					
 					<p class="nomargin"><strong>1.  Enter your legal business name</strong></p>
-					<label class='hide' for="business-name">Enter Your Legal Business Name</label>
+					<label class='hide' for="business-name">Enter your legal business name</label>
 					<div class="row">
 						<div class="columns large-4">
 							<input type="text" class="error" name="business-name" value="" id="business-name">
@@ -116,8 +117,8 @@
 					<span class="hr marginbottom15"></span>
 					
 					<p class="smallmargin"><strong>2.  Assign an alternate contact</strong></p>
-					<p>In case you are unavailable to renew, you can assign an alternate contact to act as your backup.</p>
-					<label for="alternate-contact">Alternate Contact Email Address (optional)</label>
+					<p>In case you are unavailable at renewal time, you can assign an alternate contact to act as your backup.</p>
+					<label for="alternate-contact">Alternate contact email address (optional)</label>
 					<div class="row">
 						<div class="columns large-4 medium-10 small-10">
 							<input type="text" name="alternate-contact" value="" id="alternate-contact">
@@ -140,7 +141,7 @@
 							<input type="radio" id="usertype-enduser" name="usertype" value="enduser">
 							<label for="usertype-enduser">
 								<span></span>
-								<strong>I am an End-User.</strong><br/>
+								<strong>I am an End User.</strong><br/>
 								I will be using a third-party software or service to apply NCOA Mover Data updates to my own customer database or mailing list. I will not be using NCOA as part of any commercial service offering.
 							</label>
 						</li>
@@ -149,7 +150,7 @@
 							<label for="usertype-serviceprovider">
 								<span></span>
 								<strong>I am a Service Provider.</strong><br/>
-								I will be providing commercial NCOA Mover Data services to the market, or using NCOA as part of a commercial service offering. (As a Service Provider, you can also use NCOA to update your own customer data and lists).
+								I will be providing commercial NCOA Mover Data services to the market, or using NCOA as part of a commercial service offering. (As a Service Provider, you can also use NCOA to update your own customer data and lists.)
 							</label>
 						</li>
 						<li class="error">
@@ -161,6 +162,7 @@
 						</li>
 					</ul>
 					
+					<input type="submit" class="button light marginright20 margintop40" value="Cancel">
 					<input type="submit" class="button margintop40" value="Continue">
 				</form>
 				

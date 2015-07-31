@@ -64,8 +64,9 @@
 				
 				<dl class="accordion" data-accordion="data-accordion">
 				  <dd class="accordion-navigation active">
-				    <a href="#panel1b">Validate client Terms of Use</a>
+				    <a href="#panel1b">Validate Terms of Use</a>
 				    <div id="panel1b" class="content active">
+<<<<<<< Updated upstream
 				      	<p>Before you process client lists against NCOA Mover Data you need to ensure that your client has an active NCOA Terms of Use ID.</p>
                         
                         <p>You can search for a single ID or download all IDs.</p>
@@ -78,10 +79,27 @@
                         
                         <p><em>*some exceptions may apply.</em></p>
 
+=======
+				      	
 							
-							<p><strong>Enter Terms for Use ID</strong></p>
+							<p class="nomargin"><strong>Validate clients’ Terms of Use</strong></p>
+							<p class="nomargin">Before you process client lists against NCOA Mover Data you need to ensure that your client has an active NCOA Terms of Use ID.  </p>
+							<p>You can search for a single ID or download all IDs. </p>
+
+							<p class="nomargin"><strong>ID not found?</strong></p>
+							<p>If your client is new to NCOA and has recently agreed to Terms of Use for the first time, their ID may still be pending Canada Post approval. Please allow 1 business day* for an ID to become active. </p>
+							<p class="nomargin">If the ID is expired, please ask your client to renew their ID by re-accepting NCOA Terms of Use.  </p>
+							<p class="smalltxt">*some exceptions may apply.</p>
+							
+>>>>>>> Stashed changes
+							
 							
 							<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+								
+								<div class="alert-box msgError" data-alert="data-alert">
+									<code><span>x</span></code>
+									<p>Terms of Use ID must be entered.</p>
+								</div>
 								
 								<label for="termsofuseid">Start entering ID eg: EU123456789</label>
 								<div class="row">
@@ -119,7 +137,7 @@
 				    <a href="#panel2b">Upload &amp; View Processing Reports</a>
 				    <div id="panel2b" class="content">
 				      
-						<p>Upload and view your monthly processing reports.</p>
+						<p class="nomargin">Upload and view your monthly processing reports.</p>
 						<p><strong>Upload Monthly Processing Report:</strong></p>
 						
 						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
@@ -259,7 +277,7 @@
 				    <a href="#panel3b">View Client Usage Reports</a>
 				    <div id="panel3b" class="content">
 				      
-						<p>View your clients' monthly data usage.</p>
+						<p class="nomargin">View your clients' monthly data usage.</p>
 						<label for="selectyear" class="marginbottom20"><strong>Select Year to view Client Usage Report Summary</strong></label>
 						
 						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
@@ -327,7 +345,7 @@
 				    <a href="#panel4b">Manage my Terms of Use</a>
 				    <div id="panel4b" class="content">
 				      
-						<p>Click on an ID to view your agreed upon NCOA Terms of Use.</p>
+						<p>Select an ID to view your accepted NCOA Terms of Use. </p>
 						
 						
 						
@@ -396,9 +414,9 @@
 			<div class="row" data-equalizer="data-equalizer">
 				<div class="columns large-6 medium-6 small-12">
 					<div class="panel noborder" data-equalizer-watch="data-equalizer-watch">
-						<h5>Terms of Use Renewal Emails &amp; Notifications</h5>
-						<p>NCOA sends out annual reminders to renew your own Terms of Use.</p>
-						<p><a class="blueLink_arrow" href='#'>Modify</a></p>
+						<h5>Turn renewal notification emails On / Off</h5>
+						<p>You are automatically subscribed to annual NCOA Mover Update renewal notifications.</p>
+						<p><a class="blueLink_arrow" data-reveal-id="notificationemails" href='#'>Modify</a></p>
 					</div>
 				</div>
 				<div class="columns large-6 medium-6 small-12">
@@ -411,6 +429,17 @@
 				
 				
 				
+				
+				<div id="notificationemails" class="reveal-modal small" data-reveal="data-reveal" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+				  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+				  <h2 id="modalTitle">Renewal notification emails</h2>
+				  <p>By unsubscribing from renewal notifications, you will stop receiving emails reminding you that your Terms of Use will soon expire. This increases your risk of NCOA service interruption with your provider, who cannot offer mover data services to you after your ID becomes inactive.</p>
+
+				  <p class="nomargin">Email address: <strong>john.doe@amce.ca</strong></p>
+				  <p class="nomargin">Renewal notification emails are <strong class="green">ON</strong></p>
+				  <!-- <p class="nomargin">Renewal notification emails are <strong class="red">OFF</strong></p> -->
+				  <p class="nomargin">You will now receive renewal notification emails</p>
+				</div>
 				
 				
 				

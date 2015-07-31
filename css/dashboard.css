@@ -47,9 +47,9 @@ table.ncoatable tbody tr td .button {
 .red span.circle-status{background:#d82b27;border: 1px solid #d82b27;}
 .pending span.circle-status{background:#fff;border: 1px solid #ccc;background:#fff url('../images/pendinghands.png') no-repeat 4px 2px / 50% 50%;}
 
-.accordion dd table tbody tr td .green{color: #739f1c;}
+.accordion dd table tbody tr td .green, .green{color: #739f1c;}
 .accordion dd table tbody tr td .yellow{color: #febf2e;}
-.accordion dd table tbody tr td .red{color: #d82b27;}
+.accordion dd table tbody tr td .red, .red{color: #d82b27;}
 
 div.statstablehead{
 	font-size: 12px;
