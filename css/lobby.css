@@ -37,15 +37,18 @@
 	padding: 60px 0;
 }
 
-#ncoa-getting-started h2 {
+#ncoa-getting-started h2, #ncoa-benefits h2, #ncoa-how-it-works h2 {
 	font-size: 35px;
 	margin: 0 0 10px 0;
 }
 
-#ncoa-getting-started h3 {
+#ncoa-getting-started h3, #ncoa-benefits h3, #ncoa-how-it-works h3 {
 	font-size: 27px;
 	margin: 0 0 40px 0;
 }
+
+
+
 
 #ncoa-benefits {
 	border-bottom: 1px solid #e5e5e4;
