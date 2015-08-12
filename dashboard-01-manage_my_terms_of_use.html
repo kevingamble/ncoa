@@ -44,9 +44,7 @@
 	 <link rel="stylesheet" href="http://canadapost.ca/web/assets/css/responsive.css" type="text/css" media="screen">
 	 <link rel="stylesheet" href="css/dashboard.css" type="text/css" media="screen">
 	 <link rel="stylesheet" href="http://canadapost.ca/web/assets/css/vpo.css" type="text/css" media="screen">
-	 
-	 <link rel="stylesheet" href="https://www.canadapost.ca/web/assets/css/landingpages/cmb00_styling.css" type="text/css" media="screen">
-	 
+	 	 
 	 
     <script src="http://canadapost.ca/web/assets/js/foundation5/vendor/modernizr.js"></script>
 	  
@@ -54,12 +52,26 @@
   <body>
     
 	 
-    <div class="row paddingtop50 paddingtop30_tablet paddingtop30_mobile marginbottom50">
+	 
+	 <!--temp code -->
+	 <header id="header">
+		 <div class="row">
+	 	<div role="navigation" class="large-12 medium-12 small-12 twelve columns icons" style="height:32px;" id="sitelinks">
+		 	</div>
+		 </div>
+		 <div class="header-container header-container-noscroll">
+			 Temp Header
+		 </div>
+	 </header>
+	 <!--temp code -->
+	 
+	 
+    <div class="row paddingtop50">
         <div class="large-12 medium-12 small-12 columns">
             
 				
-				<h1>NCOA Mover Data Dashboard</h1>
-				<h5><strong>Hello Jack</strong>, welcome to your NCOA Dashboard.</h5>
+				<h1 class="paddingtop50_tablet paddingtop50_mobile">NCOA Mover Data Dashboard</h1>
+				<h5 class="marginbottom30">Hello <strong>Jack</strong>, welcome to your NCOA Dashboard.</h5>
 				
 				
 				<dl class="accordion" data-accordion="data-accordion">
@@ -67,8 +79,14 @@
 				    <a href="#panel1b">Manage my Terms of Use</a>
 				    <div id="panel1b" class="content active">
 
-							<p>You have not yet created a Mover Update Terms of Use.</p>
+						 	<!-- text shown when user has no terms of use created -->
+							<!-- <p>You have not yet created a Mover Update Terms of Use.</p> -->
+							<!-- <a class='button' href='#'>Create your first NCOA Terms of Use</a> -->
+							<!-- /text shown when user has no terms of use created -->
 							
+							<!-- text shown when user has a terms of os use in -->
+							<p>Select an ID to view your NCOA Terms of Use.</p>
+							<!-- /text shown when user has a terms of os use in -->
 							
 							<table class="marginbottom40 ncoatable">
 								<thead>
@@ -81,18 +99,21 @@
 									</th>
 								</thead>
 								<tbody>
-									<tr>
-										<td class="ncoa-tou">EU123456789</td>
-										<td class="ncoa-secondary">aaronlawrence@canadapost.ca<a class="button radius" href="#">Update</a></td>
-										<td class="ncoa-creation">2015-05-21</td>
-										<td class="ncoa-expiry">2015-05-21</td>
-										<td class="ncoa-status"><span class="circle-status green">Active</span><a class="button radius" href="#">Renew</a></td>
-                                        
+	                        <tr>
+										<td class="ncoa-tou"><a class="linktopptleft" href='#'>SB5234567890</a></td>
+										<td class="ncoa-secondary">
+											<span class="emailholder">jane.smith@mailposte.canadapost.com</span>
+											<input type="text" class="hide" name="" value="" id="">
+											<span class="sentnotification hide"><span></span> Sent</span>
+											<a class="button light updatecontact" href="#">Update</a></td>
+										<td  class="ncoa-creation text-center">2014-02-22</td>
+										<td class="ncoa-expiry text-center">2014-02-22</td>
+										<td class="green ncoa-status"><span class="circle-status"></span> Active <a class="button light" href="#">Renew</a></td>
 									</tr>
 								</tbody>
 							</table>
 							
-							<a href="#" class="button light">Download All Terms of Use</a>
+							<a href="#" class="button light nomarginbottom">Download All Terms of Use</a>
 							
 				    </div>
 				  </dd>
@@ -102,7 +123,7 @@
 				
 				
 				
-				<span class="hr marginbottom30 margintop50"></span>
+				<span class="hr marginbottom30 margintop30"></span>
 				
 			<div class="row" data-equalizer="data-equalizer">
 				<div class="columns large-6 medium-6 small-12">
@@ -136,12 +157,12 @@
 				  <p>To start cleaning your data with NCOA Mover Data, you must agree to Terms of Use. These Terms of Use govern how your company can use NCOA data. Before you continue, please make sure that you have the legal authority to sign the NCOA Terms of Use on behalf of your company, firm or organization.</p>
 				  <p><strong>Next Steps:</strong></p>
 				  <ol>
-						<li>Select the user type that best describes how you will use NCOA Mover Data service </li>
+						<li>Select the user type that best describes how you will use the NCOA Mover Data service </li>
 						<li>Review and agree to the Terms of Use.</li>
 						<li>You will receive a Terms of Use ID upon review and approval of your request by Canada Post.</li>
 						<li>Give your ID to your NCOA provider and begin cleaning your data.</li>
 				  </ol>
-				  <a class="button" style='margin:0 auto;display:block;width:400px;' href="#">Start now</a>
+				  <a class="button en" href="#">Start now</a>
 				</div>
 				
 				
@@ -166,6 +187,12 @@
     </div>
 	 
     
+	 
+	 <!--temp code -->
+	 <div class="footer-containerBlue noindex">temp footer</div>
+	 <div style="height:400px;"></div>
+	 <!--temp code -->
+	 
 
     
     
@@ -174,12 +201,23 @@
             <script src="http://canadapost.ca/web/assets/js/foundation5/vendor/foundation.equalizer.js"></script>
 		<!--<![endif]-->  
 					<script src="js/ncoa-js.js" type="text/javascript" charset="utf-8"></script>
-			<!--[if gt IE 8]><!-->
+					<script src="js/noca-dashboard.js" type="text/javascript" charset="utf-8"></script>
+		
+				<!--[if gt IE 8]><!-->
             <script>
               $(document).foundation();
 				  $(document).ready(function(){$('#welcomeModal').foundation('reveal', 'open')});
             </script>
-		<!--<![endif]-->      
+				<!--<![endif]-->    
+		
+		
+		
+     
+		
+		
+		
+		
+		  
 		
   </body>
 </html>

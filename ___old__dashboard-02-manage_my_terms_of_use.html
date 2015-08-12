@@ -134,6 +134,213 @@
 							
 				    </div>
 				  </dd>
+				  <dd class="accordion-navigation">
+				    <a href="#panel2b">Upload &amp; View Processing Reports</a>
+				    <div id="panel2b" class="content">
+				      
+						<p class="nomargin">Upload and view your monthly processing reports.</p>
+						<p><strong>Upload Monthly Processing Report:</strong></p>
+						
+						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+							<label for="browsereports">Click here to browse reports</label>
+							<div class="row">
+								<div class="columns large-4 medium-6 small-12">
+									<input type="text" name="" value="" id="browsereports">
+								</div>
+								<div class="columns large-4 medium-6 small-12">
+									<input type="submit" class="button light" value="Browse">
+									<input type="submit" class="button marginleft10" value="Upload">
+								</div>
+								<div id="columns large-4 medium-6 small-12">
+									<p class="alertcheckmark"><span></span>Report Uploaded</p>
+								</div>
+							</div>
+						</form>
+						
+						<span class="hr marginbottom20"></span>
+						
+						<p><strong>Select Date Range to view Processing Report Summary</strong></p>
+						
+						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+							<div class="inlineblock">
+								<input type="text" name="" value="11-03-2014" id=""><span class="spacer">to</span><input type="text" name="" value="11-03-2014" id="" >
+								<input type="submit" class="button marginleft10 marginright10" value="Show Summary">
+								<input type="submit" class="button light" value="Download full processing report">
+							</div>
+							
+							
+							
+						</form>
+						
+						
+						
+						<div class="statstablehead">
+							NCOA Processing Report - &lt;SB name&gt; for YYYY-MM to YYYY-MM
+						</div>
+						<table class="ncoatable smalltxt">
+							
+							<thead>
+							<tr>
+								<th class="text-left">Month (yyyy-mm)</th>
+								<th class="text-left">Total Records Processed</th>
+								<th class="text-left">Exclusions</th>
+								<th class="text-left">Net Records Processed</th>
+								<th class="text-left">Total Matches</th>
+								<th class="text-left">% Total Matches</th>
+								<th class="text-left">Total Nixies</th>
+								<th class="text-left">% Total Nixies</th>
+								<th class="text-left">Net Matches</th>
+								<th class="text-left">Net % Matches</th>
+								<th class="text-left">Net Nixies</th>
+								<th class="text-left">Net % Nixies Matched</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							<tr>
+								<td>2014-10</td>
+								<td>239,656</td>
+								<td>43,138</td>
+								<td>196,518</td>
+								<td>9,171</td>
+								<td>3.8%</td>
+								<td>3,668</td>
+								<td>1.5%</td>
+								<td>9,171</td>
+								<td>4.7%</td>
+								<td>3,668</td>
+								<td>1.9%</td>
+							</tr>
+							</tbody>
+						</table>
+						
+						
+						
+						
+				    </div>
+				  </dd>
+				  <dd class="accordion-navigation">
+				    <a href="#panel3b">View Client Usage Reports</a>
+				    <div id="panel3b" class="content">
+				      
+						<p class="nomargin">View your clients' monthly data usage.</p>
+						<label for="selectyear" class="marginbottom20"><strong>Select Year to view Client Usage Report Summary</strong></label>
+						
+						<form action="dashboard-01_submit" method="get" accept-charset="utf-8">
+							<div class="inlineblock">
+							<select name="some_name" id="selectyear" class="marginright10" onchange="" size="1">
+								<option value="option1">Year</option>
+								<option value="option2">1992</option>
+							</select>
+							<input type="submit" class="button light marginright10" value="Show Summary">
+							<input type="submit" class="button" value="Download Full Client Usage Report">
+							</div>
+						</form>
+						
+						
+						<div class="statstablehead">
+							NCOA Client Usage Report - &lt;SB name&gt; for period YYYY-MM to YYYY-MM
+						</div>
+						<table class="ncoatable smalltxt">
+							
+							<thead>
+							<tr>
+								<th class="text-left">TOU ID</th>
+								<th class="text-left">Business<br />Name<br />(TOU)</th>
+								<th class="text-left">Jan-14</th>
+								<th class="text-left">Feb-14</th>
+								<th class="text-left">Mar-14</th>
+								<th class="text-left">Apr-14</th>
+								<th class="text-left">May-14</th>
+								<th class="text-left">Jun-14</th>
+								<th class="text-left">Jul-14</th>
+								<th class="text-left">Aug-14</th>
+								<th class="text-left">Sept-14</th>
+								<th class="text-left">Oct-14</th>
+								<th class="text-left">Nov-14</th>
+								<th class="text-left">Dec-14</th>
+								<th class="text-left">Total Net<br />Records<br />Processed</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>TOU ID</td>
+								<td>SB Name</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>5,000,000</td>
+								<td>30,000,000</td>
+							</tr>
+						</tbody>
+						</table>
+						
+						
+				    </div>
+				  </dd>
 				  
 				  <dd class="accordion-navigation">
 				    <a href="#panel4b">Manage my Terms of Use</a>

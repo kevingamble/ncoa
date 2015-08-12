@@ -22,22 +22,22 @@
 	margin: 0 0 20px 0;
 }
 
-#ncoa-main-bullets ul {
+.ncoa-main-bullets ul {
 	margin: 20px 40px;
 	font-size: 16px;
 }
 
-#ncoa-main-bullets {
-	padding: 50px 0;
+.ncoa-main-bullets {
+	padding: 30px 0;
 }
 
 #ncoa-getting-started {
 	background: none repeat scroll 0 0 #eef0f2;
-	margin: 0 0 50px;
-	padding: 60px 0;
+/*	margin: 0 0 50px;*/
+	padding: 30px 0;
 }
 
-#ncoa-getting-started h2, #ncoa-benefits h2, #ncoa-how-it-works h2 {
+/*#ncoa-getting-started h2, #ncoa-benefits h2, #ncoa-how-it-works h2 {
 	font-size: 35px;
 	margin: 0 0 10px 0;
 }
@@ -45,29 +45,30 @@
 #ncoa-getting-started h3, #ncoa-benefits h3, #ncoa-how-it-works h3 {
 	font-size: 27px;
 	margin: 0 0 40px 0;
-}
+}*/
 
 
 
 
 #ncoa-benefits {
 	border-bottom: 1px solid #e5e5e4;
-	padding-bottom: 20px;	
-	margin-bottom: 40px;
+	padding: 30px 0 0 0;	
+	margin-bottom: 30px;
 }
 
-#ncoa-benefits h3, #ncoa-how-it-works h3, #ncoa_providers h3 {
+/*#ncoa-benefits h3, #ncoa-how-it-works h3, #ncoa_providers h3 {
 	font-size: 27px;
-}
+}*/
 
 #ncoa-benefits li, #ncoa-how-it-works li {
 	padding-bottom: 10px;
 }
 
-#ncoa_providers h4 {
+/*#ncoa_providers h4 {
 	font-size: 21px;
 	font-weight: 300;
-}
+}*/
+
 #ncoa_providers li {
 	list-style: none;
 	width: 48%;
@@ -128,3 +129,13 @@
 #ncoa-faq table tbody tr td {
 	border-bottom: 1px solid #e5e5e4;
 }
+
+
+
+
+table.serviceproviderstable{border:none;width:100%;}
+table.serviceproviderstable thead tr th{padding:0 0 10px 0;}
+table.serviceproviderstable tbody tr{border-bottom:1px solid #e5e5e5;}
+table.serviceproviderstable tbody tr td{font-size:12px;padding:10px 0;vertical-align:top;}
+
+

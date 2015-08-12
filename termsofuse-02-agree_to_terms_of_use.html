@@ -44,6 +44,8 @@
 	 <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
 	 <link rel="stylesheet" href="css/termsofuse.css" type="text/css" media="screen">
 	 <link rel="stylesheet" href="css/vpo.css" type="text/css" media="screen">
+	 <link rel="stylesheet" href="https://www.canadapost.ca/web/assets/css/landingpages/cmb00_styling.css" type="text/css" media="screen">
+	 
 	 
     <script src="http://canadapost.ca/web/assets/js/foundation5/vendor/modernizr.js"></script>
 	  
@@ -51,11 +53,24 @@
   <body>
     
 	 
-    <div class="row paddingtop50 paddingtop30_tablet paddingtop30_mobile">
+	 <!--temp code -->
+	 <header id="header">
+		 <div class="row">
+	 	<div role="navigation" class="large-12 medium-12 small-12 twelve columns icons" style="height:32px;" id="sitelinks">
+		 	</div>
+		 </div>
+		 <div class="header-container header-container-noscroll">
+			 Temp Header
+		 </div>
+	 </header>
+	 <!--temp code -->
+	 
+	 
+    <div class="row paddingtop50">
         <div class="large-12 medium-12 small-12 columns">
             
 				
-				<h1 class="left">NCOA Terms of Use</h1>
+				<h1 class="left paddingtop50_tablet paddingtop50_mobile">NCOA Terms of Use</h1>
 				<span class="safesecurebadge right">Safe &amp; Secure</span>
 				<div class="clear"></div>
 				
@@ -89,11 +104,11 @@
 				<div class="clear"></div>
 				
 				
-				<form action="termsofuse-02-agree_to_terms_of_use_submit" method="get" accept-charset="utf-8">
+				<form action="termsofuse-02-agree_to_terms_of_use_submit" class="validateform" method="get" accept-charset="utf-8">
 
 				
 				<div class="panel white">
-					<p><strong>NCOA Mover Data may only be used to:</strong></p>
+					<p>NCOA Mover Data may only be used to:</p>
 
 
 					<!--start of end user -->
@@ -123,10 +138,10 @@
 					<li>
 						<p class="smallmargin">Update a database record with new mover information if a Business Relationship exists between the recipient organization and the mover.</p>
 						<p class="smallmargin marginleft20">A Business Relationship exists between a mover and an organization when an individual or business has:</p>
-						<ul class="marginleft40">
+						<ol type='a' class="marginleft40">
 							<li>made a purchase or donation, rented, leased, contracted, or participated in an organization’s provision of products or services within the past 24 months; or </li>
 							<li>requested information or made an inquiry within the last 6 months.</li>
-						</ul>
+						</ol>
 						<p class="smallmargin marginleft20">If such purchase, donation, rent, lease or contract for the provisions of products and services involves ongoing use or transactions under a subscription, account, loan or similar relationship, the 24-month period starts on the day the relationship terminates.</p>
 					</li>
 					</ol>
@@ -134,16 +149,15 @@
 					
 					
 					
-					<div class="agree-checkbox-holder bold error">
-						<input type="checkbox" class="error" id="checkbox-agree-one" tab-index="1" />
+					<div class="agree-checkbox-holder bold">
+						<input type="checkbox" id="checkbox-agree-one" class='required' tab-index="1" />
 						<label for="checkbox-agree-one">I acknowledge and agree</label>
-						<div class="msgError"><small class="error">This is a required field.</small></div>
 					</div>					
 				</div>
 	
 	
 				<div class="panel white">
-					<p><strong>I SHALL NOT use the NCOA Mover Data to:</strong></p>
+					<p>I SHALL NOT use the NCOA Mover Data to:</p>
 					<ol> 
 						<li>Augment an address database to include any person with whom I do not have a business relationship;</li>
 						<li>Create a mailing list or other sub-list to target customers based on the knowledge of their move;</li>
@@ -153,7 +167,7 @@
 						<li>For any other purposes other than correcting mailing lists or updating databases where a business relationship exists.</li>
 					</ol>
 					<div class="agree-checkbox-holder bold">
-						<input type="checkbox" id="checkbox-agree-two" tab-index="2"/>
+						<input type="checkbox" id="checkbox-agree-two" class='required' tab-index="2"/>
 						<label for="checkbox-agree-two">I acknowledge and agree</label>
 					</div>
 				</div>
@@ -162,7 +176,7 @@
 				<div class="panel white">
 					<p>I am accepting these Terms of Use on behalf of my organization. I will ensure that any additional recipients of the updated mover information within my organization are aware that they are also subject to the NCOA Terms of Use. Canada Post may take legal action if these Terms of Use are violated.</p>
 					<div class="agree-checkbox-holder bold">
-						<input type="checkbox" id="checkbox-agree-three" tab-index="3"/>
+						<input type="checkbox" id="checkbox-agree-three" class='required' tab-index="3"/>
 						<label for="checkbox-agree-three">I acknowledge and agree</label>
 					</div>
 				</div>
@@ -181,7 +195,7 @@
 						
 					
 					<div class="agree-checkbox-holder bold">
-						<input type="checkbox" id="checkbox-agree-four" tab-index="4"/>
+						<input type="checkbox" id="checkbox-agree-four" class='required' tab-index="4"/>
 						<label for="checkbox-agree-four">I acknowledge and agree</label>
 					</div>
 				</div>
@@ -200,7 +214,7 @@
 						
 					
 					<div class="agree-checkbox-holder bold">
-						<input type="checkbox" id="checkbox-agree-five" tab-index="5"/>
+						<input type="checkbox" id="checkbox-agree-five" class='required' tab-index="5"/>
 						<label for="checkbox-agree-five">I acknowledge and agree</label>
 					</div>
 				</div>
@@ -209,7 +223,7 @@
 					<p>Canada Post makes no warranty or representation, either express or implied, with respect to the NCOA Mover Data file, including its correctness, quality, performance, merchantability, or fitness for particular purpose. Canada Post shall not be liable for direct, indirect, special, incidental, consequential damages, or any loss of use, revenue or profit arising out of use or inability to use the NCOA Mover Data, even if advised of the possibility of such damages.</p>
 					
 					<div class="agree-checkbox-holder bold">
-						<input type="checkbox" id="checkbox-agree-six" tab-index="6"/>
+						<input type="checkbox" id="checkbox-agree-six" class='required' tab-index="6"/>
 						<label for="checkbox-agree-six">I acknowledge and agree</label>
 					</div>
 				</div>
@@ -219,7 +233,7 @@
 				<div class="row margintop40">
 					<div class="columns large-12">
 						
-						<input type="submit" class="button" value="Continue">
+						<input type="submit" class="button submit" value="Continue">
 						<input type="submit" class="button light marginright10 left" value="Previous">
 						<div class="clear"></div>
 					</div>
@@ -233,7 +247,10 @@
     </div>
 	 
     
-
+	 <!--temp code -->
+	 <div class="footer-containerBlue noindex">temp footer</div>
+	 <div style="height:400px;"></div>
+	 <!--temp code -->
     
 
       

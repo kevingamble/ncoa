@@ -41,6 +41,13 @@ div.panel.print-terms-panel{width:25%;text-align:center;border:none;margin:0 0 3
 div.panel.white{background:#fff;border-color:#ccc;}
 div.panel.noborder{border:none;}
 a.linktoppt{padding:0 25px 0 0;background:url('../images/linktoppt.png') no-repeat right 2px;}
+p.inputhint{
+	font-size: 12px;
+	margin: -20px 0 20px 0;
+	color: #575757;
+	
+}
+
 
 ul.radiogroupholder{margin:20px 0 20px 0;padding:0;}
 ul.radiogroupholder li{margin:0;padding:10px 0 10px 40px;list-style:none;position:relative;}

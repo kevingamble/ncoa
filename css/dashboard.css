@@ -9,7 +9,21 @@ small.error{background:none;color:#DB3A31;display:block;font-size:13px;font-styl
 input.error,select.error{border:1px solid #db3a31;border-radius:2px;margin-bottom:20px;}
 div small.error{margin-top:-13px;/*white-space:nowrap;*/}
 .panel.noborder{border:none;}
+#welcomeModal .button{margin:0 auto;display:block;}
+#welcomeModal .button.en{width:140px;}
 /*end of common code - remove when moved*/
+
+/* Medium screens*/
+@media only screen and (min-width:40.063em) and (max-width:64em) { 
+.paddingtop50_tablet { padding-top: 50px !important; }
+.margintop50_tablet { margin-top: 50px !important; }
+}
+/* Small screens*/
+@media only screen and (max-width: 40em) {
+.paddingtop50_mobile { padding-top: 50px !important; }
+.margintop50_mobile { margin-top: 50px !important; }
+}
+
 
 
 a.linktopptright{padding:0 25px 0 0;background:url('../images/linktoppt.png') no-repeat right 2px;}
@@ -21,10 +35,11 @@ span.spacer{margin: 0 12px;display: inline-block;}
 .alertcheckmark span{width:16px;height:16px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 1px 3px 0 0;float:left;background:#87ae20 url('../images/checkmark.jpg') no-repeat -1px 0px;text-align: center;line-height: 14px;color: #fff;font-size: 12px;}
 
 
-table.ncoatable{width:100%;}
+table.ncoatable{width:100%;border-top: none;}
 table.ncoatable.smalltxt tr th, table.ncoatable.smalltxt tr td{font-size: 12px;}
 table.ncoatable thead tr th{padding-left:0 !important;padding-right:0 !important;margin:0 !important;vertical-align:top;}
-table.ncoatable tbody tr td{border-bottom: 1px solid #e5e5e4;height:30px;}
+table.ncoatable tbody tr td{border-bottom: 1px solid #e5e5e4;height:30px;padding: 7px 0;}
+table.ncoatable.altcellheight tbody tr td{padding: 15px 0;}
 table.ncoatable .placeholdernumber{height:35px;display: block;padding:9px 0 0 25px;box-sizing: border-box;}
 table.ncoatable .placeholder{color: #ccc;font-style: italic;}
 table.ncoatable input[type="text"]{padding:5px;line-height:0;font-size: 12px;height:auto;margin:0;width:240px;display: inline-block;}
@@ -34,14 +49,15 @@ table.ncoatable span.sentnotification span{width:16px;height:16px;display:inline
 table.ncoatable span.sentnotification.hide{display: none;}
 
 table.ncoatable tbody tr td .button {
-	font-size: 14px;
+	font-size: 12px;
 	max-width: 100px;
-	padding: 2px 15px;
+	padding: 8px 15px;
 	margin-left: 10px;
+	font-weight:400;
 }
 
-
-.green span.circle-status,.yellow span.circle-status,.red span.circle-status, .pending span.circle-status{width:13px;height:13px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 3px 3px 0 0;float:left;}
+table.ncoatable.altcellheight span.circle-status{margin: 3px 5px 0 0;}
+.green span.circle-status,.yellow span.circle-status,.red span.circle-status, .pending span.circle-status{width:13px;height:13px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 10px 5px 0 0;float:left;}
 .green span.circle-status{background:#739f1c;border: 1px solid #739f1c;}
 .yellow span.circle-status{background:#febf2e;border: 1px solid #febf2e;}
 .red span.circle-status{background:#d82b27;border: 1px solid #d82b27;}
