@@ -11,6 +11,18 @@ div small.error{margin-top:-13px;/*white-space:nowrap;*/}
 .panel.noborder{border:none;}
 #welcomeModal .button{margin:0 auto;display:block;}
 #welcomeModal .button.en{width:140px;}
+p.footnote{font-size: 12px;color: #373737;margin: -10px 0 10px 0;}
+.nolinebreak{white-space: nowrap;}
+@media only screen and (max-width: 40em) {
+.button.nolinebreak{padding-left:0;padding-right:0;}
+}
+p.inputhint{
+	font-size: 12px;
+	margin: -20px 0 20px 0;
+	color: #575757;
+	
+}
+
 /*end of common code - remove when moved*/
 
 /* Medium screens*/
@@ -58,6 +70,7 @@ table.ncoatable tbody tr td .button {
 
 table.ncoatable.altcellheight span.circle-status{margin: 3px 5px 0 0;}
 .green span.circle-status,.yellow span.circle-status,.red span.circle-status, .pending span.circle-status{width:13px;height:13px;display:inline-block;-webkit-border-radius:999px;-moz-border-radius:999px;border-radius:999px;margin: 10px 5px 0 0;float:left;}
+
 .green span.circle-status{background:#739f1c;border: 1px solid #739f1c;}
 .yellow span.circle-status{background:#febf2e;border: 1px solid #febf2e;}
 .red span.circle-status{background:#d82b27;border: 1px solid #d82b27;}
@@ -90,65 +103,259 @@ table.statstable tbody tr td, .accordion dd table.statstable tbody tr td{
 	border-bottom: 1px solid #e5e5e4;
 }*/
 
-@media only screen and (max-width:480px){
-	table.ncoatable tr th {
-		display: none;
-	}
+@media only screen and (max-width: 60em){
 	
-	table.ncoatable thead {
-		border: none
-	}
+
+	table.ncoatable{border-bottom:none;}
+ 	table.ncoatable tr th{display:none;}
+	table.ncoatable thead{border:none;}
 	
 	table.ncoatable tr {
 		width: 100%;
-		background-color: #eaf9fb;
-		border: 1px solid #ccc;
+		background-color: #f3f3f3;
+		margin:100px 0;
+		border-bottom: 1px solid #e5e5e4;
 	}
+	table.ncoatable tr:last-child{border-bottom:none;}
+	
 	
 	table.ncoatable tbody tr td {
-		width: 100%;
-		float: left;
-		border: none;
-		margin: 15px 5px;
+		margin:10px 25px;
 		display: table;
+		text-align: left !important;
+		height:auto;
+		border: none;
+	}
+	
+	table.ncoatable tbody tr td:first-child{
+		margin: 25px 25px 10px 25px;
+	}
+	table.ncoatable tbody tr td:last-child{
+		margin: 10px 25px 25px 25px;
 	}
 	
 	table.ncoatable tbody tr td.ncoa-tou:before, table.ncoatable tbody tr td.ncoa-secondary:before, table.ncoatable tbody tr td.ncoa-creation:before, table.ncoatable tbody tr td.ncoa-expiry:before, table.ncoatable tbody tr td.ncoa-status:before {
-		content: 'TERMS OF USE ID';
+		content: 'Terms of Use ID: ';
 		font-weight: bold;
 		width: 100%;
-		float: left;
 		margin-bottom: 8px;
+		display: inline;
+	}
+	
+	table.ncoatable span.circle-status{
+		float:none;
+		display: inline-block;
 	}
 	
 	table.ncoatable tbody tr td.ncoa-tou:before {
-		content: 'TERMS OF USE ID';
+		content: 'Terms of Use ID: ';
+		margin: 0 6px 0 0;
 	}
 	
 	table.ncoatable tbody tr td.ncoa-secondary:before {
-		content: 'ALTERNATE CONTACT';
+		content: 'Alternate Contact: ';
+		margin: 0 6px 0 0;
 	}
 	
+	table.ncoatable tbody tr td.ncoa-secondary span.emailholder{
+	}
+	
+	
 	table.ncoatable tbody tr td.ncoa-creation:before {
-		content: 'CREATION DATE';
+		content: 'Creation Date: ';
+		margin: 0 6px 0 0;
 	}
 	
 	table.ncoatable tbody tr td.ncoa-expiry:before {
-		content: 'EXPIRY DATE';
+		content: 'Expiry Date: ';
+		margin: 0 6px 0 0;
 	}
 	
 	table.ncoatable tbody tr td.ncoa-status:before {
-		content: 'STATUS';
+		content: 'Status: ';
+		color: #000;
+		margin: 0 6px 0 0;
 	}
 	
 	table.ncoatable tbody tr td.ncoa-creation, table.ncoatable tbody tr td.ncoa-expiry {
-		width: 45%;
 	}
 	
 	table.ncoatable tbody tr td .button {
-		float: right;
-		margin-right: 40px;
+		font-size:12px;
+		padding:6px 10px;
+		max-width:auto;
+		width:auto;
+		margin: 0 0 0 15px;
+		display: inline;
 	}
-	
-	
 }
+@media only screen and (max-width: 40em){
+	table.ncoatable tbody tr td.ncoa-secondary .button {
+		margin:0;
+	}
+	table.ncoatable tbody tr td.ncoa-secondary span.emailholder, table.ncoatable tbody tr td.ncoa-secondary span.sentnotification{
+		display: block;
+		margin: 0 0 15px 0;
+	}
+	table.ncoatable tbody tr td.ncoa-secondary span.sentnotification.hide{display: none;}
+	table.ncoatable tbody tr td.ncoa-secondary span.emailholder.hide{display: none;}
+}
+
+
+
+html div.msgError code span{
+height:24px;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------
+accordion
+------------------*/
+.accordion dd {
+    margin-bottom: 1px !important;
+}
+
+.accordion dd > a {
+    padding: 9px 20px 8px 20px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #efefef;
+    border-bottom: 0;
+    padding-right: 35px !important;
+}
+
+.accordion dd > a, .accordion dd > a:hover {
+    background-image: url(/web/assets/img/icons/accordion-arrow-closed.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.accordion dd.active > a {
+    background-image: url(/web/assets/img/icons/accordion-arrow-open.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-top: 6px solid #da291c;
+    margin-top: /*3px*/
+    1px;
+    background-color: #eef0f2;
+}
+
+.accordion dd table {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0px;
+    margin-bottom: 1.25rem;
+    border-top: none;
+}
+
+.accordion dd table thead, table tfoot {
+    background: none repeat scroll 0 0 #FFF;
+    font-weight: bold;
+}
+
+.accordion dd table tbody tr th {
+    color: #222222;
+    font-size: 15px;
+    font-size: 0.938rem;
+    padding: 5px;
+    text-align: left;
+    background: #FFF;
+}
+
+.accordion dd table tbody tr td {
+    color: #222222;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 5px;
+    text-align: left;
+}
+
+.accordion dd table tr th p,
+.accordion dd table tr td p {
+    font-family: inherit; /*font-size:14px;font-size:0.875rem;*/
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 0;
+    text-rendering: optimizelegibility;
+}
+
+.accordion dd ul, .accordion dd ol {
+    margin-left: 3em;
+}
+
+.accordion .content {
+    padding: 16px 15px 15px 15px;
+}
+
+.accordion dd > a, .accordion dd > a:visited {
+    color: #333;
+    font-weight: 700;
+}
+
+.accordion dd > a:hover {
+    text-decoration: none;
+    background-color: #e3e3e3;
+}
+
+.accordion dd.active > a {
+    position: relative;
+}
+
+.accordion dd.active > a:after, 
+.accordion dd.active > a:before {
+    bottom: -10px;
+    left: 15px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.accordion dd.active > a:after {
+    border-color: rgba(238, 240, 242, 0);
+    border-top-color: #eef0f2;
+    border-width: 4px;
+    margin-left: -4px;
+}
+
+.accordion dd.active > a:before {
+    border-color: rgba(238, 240, 242, 0);
+    border-top-color: #eef0f2;
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+dl.accordion dd.accordion-navigation > a, .accordion dd.accordion-navigation > a:hover {
+    background-image: url(/web/assets/img/icons/accordion-arrow-closed.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+dl.accordion dd.accordion-navigation.active > a {
+    background-image: url(/web/assets/img/icons/accordion-arrow-open.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-top: 6px solid #da291c;
+    margin-top: /*3px*/
+    1px;
+    background-color: #eef0f2;
+}
+
+dl.accordion dd.accordion-navigation {
+    margin-bottom: 1px !important;
+}
+
+/***********************************/
+
+

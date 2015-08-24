@@ -65,7 +65,7 @@
  <!--temp code -->
 	
 	
-    <div class="fullWidthHero hide-for-small-only">
+    <div class="fullWidthHero">
         <div class="main_banner_ncoa">
             <div class="row">
                 <div class="large-12 medium-12 twelve small-12 mobile-12 columns">
@@ -79,7 +79,7 @@
         </div>
     </div>
     
-    <div class="row paddingtop50_mobile">
+    <div class="row">
     	<div class="large-12 medium-12 twelve small-12 columns">
 				
 				<div class="ncoa-main-bullets">				
@@ -108,9 +108,9 @@
                     
 						  <p>To clean your data, you must agree to the NCOA Mover Data Terms of Use.</p>
 						  
-						  <ul class="marginleft40">
-							  <li><a target="_blank" href="#">View End-User Terms of Use &gt;</a></li>
-							  <li><a target="_blank" href="#">View Service Provider Terms of Use &gt;</a></li>
+						  <ul class="marginleft40 no-bullet">
+							  <li><a target="_blank" class="blueLink_arrow" href="#">View End User Terms of Use</a></li>
+							  <li><a target="_blank" class="blueLink_arrow" href="#">View Service Provider Terms of Use</a></li>
 						  </ul>
 						  
                     
@@ -131,7 +131,12 @@
     
     <div class="row">
     	<div class="large-12 medium-12 twelve small-12 columns" id="ncoa-benefits">   
-            <div class="six large-6 medium-6 small-12 columns"> 
+
+            <div class="six large-6 medium-6 small-12 columns large-push-6 medium-push-6">
+                 <img src="images/lobby-benefits.jpg" class="paddingbottom20" alt="">
+            </div>
+				
+				<div class="six large-6 medium-6 small-12 columns large-pull-6 medium-pull-6"> 
 					<h2>Benefits</h2>
                 <h3 class="marginbottom20">Why clean your customer address data with NCOA Mover Data service?</h3>
                 <ul>
@@ -141,9 +146,6 @@
                 </ul>
             </div>
             
-            <div class="six large-6 medium-6 small-12 columns">
-                 <img src="images/lobby-benefits.jpg" class="paddingbottom20" alt="">
-            </div>
         </div>
     </div>
     
@@ -170,28 +172,27 @@
     </div>
     
     <div id="ncoa_providers" class="cmb-content-grey-bkg-wrap">
-        <div class="row">
-            <div class="large-12 twelve columns">
-                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" data-equalizer="data-equalizer">
-                    <li class="nopaddingbottom paddingbottom20_mobile marginbottom20_tablet nopaddingright_mobile">
-                        <div class="white_block_with_icon" data-equalizer-watch="data-equalizer-watch">
-                            <h3>Looking for an NCOA Mover Data provider?</h3>
-                            <h4>Our approved Service Bureaus can help you.</h4>
-                            <p>View our list of approved Service Bureaus to find the one that’s right for you.</p>
-									 <a class="button radius" href="#" data-reveal-id="servicebureaus">Service Bureaus</a>
-                        </div>
-                    </li>
-                    <li class="nopaddingbottom paddingbottom20_mobile marginbottom20_tablet nopaddingright_mobile">
-                        <div class="white_block_with_icon" data-equalizer-watch="data-equalizer-watch">
-                            <h3>Looking to become a Service Bureau?</h3>
-                            <h4>Interested in developing your own NCOA software?</h4>
-                            <p>Does your clientele have an interest in processing their lists and database against NCOA data? For more information about becoming a Service Bureau, please email <a href="mailto:ncoa@canadapost.ca">ncoa@canadapost.ca</a> with information about your business and your anticipated annual data processing volume.</p>
-                            
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+		  
+		  <div class="row" data-equalizer="data-equalizer">
+		  		<div class="column large-6 medium-6">
+		  			<div class="panel white" data-equalizer-watch="data-equalizer-watch">
+                  <h3>Looking for an NCOA Mover Data provider?</h3>
+                  <h4>Our approved Service Bureaus can help you.</h4>
+                  <p>View our list of approved Service Bureaus to find the one that’s right for you.</p>
+						 <a class="button radius" href="#" data-reveal-id="servicebureaus">Service Bureaus</a>
+		  			</div>
+		  		</div>
+		  		<div class="column large-6 medium-6">
+		  			<div class="panel white" data-equalizer-watch="data-equalizer-watch">
+                   <h3>Looking to become a Service Bureau?</h3>
+                   <h4>Interested in developing your own NCOA software?</h4>
+                   <p>Does your clientele have an interest in processing their lists and database against NCOA data? For more information about becoming a Service Bureau, please email <a href="mailto:ncoa@canadapost.ca">ncoa@canadapost.ca</a> with information about your business and your anticipated annual data processing volume.</p>		  				
+		  			</div>
+		  		</div>
+		  </div>
+		  
+		  
     </div>
     
     <div class="row" id="ncoa-faq">
@@ -217,7 +218,7 @@
 						
 						<p>You can apply NCOA Mover Data to your data in one of two ways:</p>
 						
-						<table width="100%" border="0">
+						<table width="100%" border="0" class="changepaddingbaseddevice">
                       <thead>
                           <tr>
                               <th>If you...</th>
@@ -293,16 +294,6 @@
 				    </div>
 				  </dd>
 				  
-				  <dd class="accordion-navigation">
-				    <a href="#panel7b">How many years are included in the NCOA Mover Data Service?</a>
-				    <div id="panel7b" class="content">
-                  
-                	<p>The NCOA Mover Data database contains over 11 million mover records with 6 years of history.</p>
-							
-				    </div>
-				  </dd>
-				  
-				  
 				</dl>
 				
 				
@@ -322,6 +313,122 @@
 	 <div id="servicebureaus" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 	   <h2 id="modalTitle">Licensed NCOA Service Providers</h2>
 	   
+		<div class="hide-for-large-up">
+			
+			
+			<div class="row marginbottom20 margintop50">
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>360 Analytix Inc</strong></li>
+						<li>Dragomir Tusevljak</li>
+						<li><a href='mailto:dragomir@360analytix.com'>dragomir@360analytix.com</a></li>
+						<li>416-219-5372</li>
+						<li><a href='http://360analytix.com'>360analytix.com</a></li>
+						</ul>
+					
+				</div>
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>cleanlist.ca</strong></li>
+						<li>Jeff Bisset</li>
+						<li><a href='mailto:sales@cleanlist.com'>sales@cleanlist.com</a></li>
+						<li>1-800-454-0223</li>
+						<li><a href='http://cleanlist.ca'>cleanlist.ca</a></li>
+						</ul>
+					
+				</div>
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>Cornerstone Group of Companies</strong></li>
+						<li>Paul Grabowski</li>
+						<li><a href='mailto:pgrabowski@cstonecanada.com'>pgrabowski@cstonecanada.com</a></li>
+						<li>416-932-9555 x 312</li>
+						<li><a href="http://cstonecanada.com">cstonecanada.com</a></li>
+						</ul>
+					
+				</div>
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>Flagship Software Ltd</strong></li>
+						<li>Kristi Kanitz</li>
+						<li><a href='mailto:sales@flagshipsoftware.com'>sales@flagshipsoftware.com</a></li>
+						<li>1-866-672-0007</li>
+						<li><a href='http://flagshipsoftware.com'>flagshipsoftware.com</a></li>
+						</ul>
+					
+				</div>
+				
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>Formost Mediaone</strong></li>
+						<li>Alex Calpito</li>
+						<li><a href='mailto:acalpito@fmo.ca'>acalpito@fmo.ca</a></li>
+						<li>905-793-7295 x 372</li>
+						<li><a href='http://fmo.ca'>fmo.ca</a></li>
+						</ul>
+					
+				</div>
+
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>The fSA Group</strong></li>
+						<li>Alin Mihalcea</li>
+						<li><a href='mailto:alinm@thefsagroup.com'>alinm@thefsagroup.com</a></li>
+						<li>905-513-6000 x 1132</li>
+						<li><a href='http://thefsagroup.com'>thefsagroup.com</a></li>
+						</ul>
+					
+				</div>
+
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>Global-Z International Inc.</strong></li>
+						<li>Kathy Woodward<br />Marty Shaw</li>
+						<li><a href='mailto:sales@globalz.com'>sales@globalz.com</a></li>
+						<li>802-445-1011</li>
+						<li><a href="http://globalz.com">globalz.com</a></li>
+						</ul>
+					
+				</div>
+				
+				<div class="columns large-4 medium-6 small-12">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>Infogroup</strong></li>
+						<li>Dan Cadieux</li>
+						<li><a href='mailto:dan.cadieux@infogroup.com'>dan.cadieux@infogroup.com</a></li>
+						<li>1-800-565-7224 x 37172</li>
+						<li><a href='http://infogroup.ca'>infogroup.ca</a></li>
+						</ul>
+					
+				</div>
+				
+				<div class="columns large-4 medium-6 small-12 end">
+					
+						<ul class='no-bullet serviceprovidersmallitem'>
+						<li><strong>JSI Data Systems</strong></li>
+						<li>Janet Black Evans</li>
+						<li><a href='mailto:janet@jsidata.ca'>janet@jsidata.ca</a></li>
+						<li>613-727-9353</li>
+						<li><a href='http://jsidata.ca'>jsidata.ca</a></li>
+						</ul>
+					
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		<div class="show-for-large-up">
+			
+		
 		<table class='serviceproviderstable'>
 			<thead>
 				<tr>
@@ -399,6 +506,7 @@
 
 			</tbody>
 		</table>
+		</div>
 		
 	   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	 </div>
@@ -419,6 +527,11 @@
 		<!--[if gt IE 8]><!-->
           <script>
             $(document).foundation();
+				
+				if(window.location.hash == "#servicebureaus"){
+					$('#servicebureaus').foundation('reveal', 'open');
+				}
+				
           </script>
 	<!--<![endif]-->
 

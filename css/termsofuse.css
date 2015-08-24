@@ -1,15 +1,31 @@
+
 /*common code - remove when moved*/ 
 .clear{clear:both;}
 .hr{border:solid #ccc;border-width:1px 0 0 0;display:block;margin:7px 0;padding:0;}
 .blue_question_icon{background:url('http://canadapost.ca/cpotools/mc/assets/images/structure/blue_question_icon.gif') 0 70% no-repeat;padding-left:20px;}
-@media only screen and (max-width:40em){a.button,input.button{display:block;width:100%;}
-}
+@media only screen and (max-width:40em){a.button,input.button{display:block;width:100%;}}
 small.error, .error small.error{background:none;color:#f04124;display:block;font-size:13px;font-style:normal;font-weight:500;margin-bottom:1rem;margin-top:-1px;padding:0;padding-left:8px;line-height:normal;}
 input.error,select.error{border:1px solid #db3a31;border-radius:2px;margin-bottom:20px;}
 div small.error{margin-top:-13px;/*white-space:nowrap;*/}
 p.smallmargin{margin: 0 0 5px 0;}
 .agree-checkbox-holder small{margin: 0 0 0 35px;}
-.footnote{font-size: 12px;color: #373737;margin: 10px 0 0 0;}
+p.footnote{font-size: 12px;color: #373737;margin: -10px 0 10px 0;}
+.nolinebreak{white-space: nowrap;}
+p.inputhint{
+	font-size: 12px;
+	margin: -20px 0 20px 0;
+	color: #575757;
+}
+@media only screen and (max-width: 40em){
+	p.inputhint{
+		margin: -15px 0 20px 0;	
+	}
+}
+
+@media only screen and (max-width: 40em){
+	.small-no-float{float: none;}
+}
+
 /*end of common code - remove when moved*/
 
 
@@ -41,12 +57,7 @@ div.panel.print-terms-panel{width:25%;text-align:center;border:none;margin:0 0 3
 div.panel.white{background:#fff;border-color:#ccc;}
 div.panel.noborder{border:none;}
 a.linktoppt{padding:0 25px 0 0;background:url('../images/linktoppt.png') no-repeat right 2px;}
-p.inputhint{
-	font-size: 12px;
-	margin: -20px 0 20px 0;
-	color: #575757;
-	
-}
+
 
 
 ul.radiogroupholder{margin:20px 0 20px 0;padding:0;}
@@ -70,7 +81,8 @@ div.agree-checkbox-holder{}
 div.agree-checkbox-holder label{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
 div.agree-checkbox-holder.bold label{font-weight:600;}
 html.ie8 div.agree-checkbox-holder input{display: inline-block;float:left;margin: -3px 10px 0 0;}
-div.agree-checkbox-holder [type="checkbox"]:not(:checked),div.agree-checkbox-holder [type="checkbox"]:checked{position:absolute;left:-9999px;}
+div.agree-checkbox-holder input{display: inline-block;float:left;margin: 6px 10px 0 10px;}
+/*div.agree-checkbox-holder [type="checkbox"]:not(:checked),div.agree-checkbox-holder [type="checkbox"]:checked{position:absolute;left:-9999px;}
 div.agree-checkbox-holder [type="checkbox"]:not(:checked) + label,div.agree-checkbox-holder [type="checkbox"]:checked + label{position:relative;padding-left:35px;cursor:pointer;}
 div.agree-checkbox-holder [type="checkbox"]:not(:checked) + label:before,
 div.agree-checkbox-holder [type="checkbox"]:checked + label:before{content:'';position:absolute;left:0;top:2px;width:20px;height:20px;border:2px solid #ccc;background:#fff;}
@@ -85,5 +97,5 @@ div.agree-checkbox-holder [type="checkbox"]:disabled:checked + label:after{color
 div.agree-checkbox-holder [type="checkbox"]:disabled + label{color:#aaa;}
 div.agree-checkbox-holder [type="checkbox"]:checked:focus + label:before,
 div.agree-checkbox-holder [type="checkbox"]:not(:checked):focus + label:before{border:2px solid #087cc0;}
-
+*/
 div.agree-checkbox-holder div small.error{margin-top:5px;}

@@ -67,15 +67,74 @@
   <!--temp code -->
 	 
 	 
-    <div class="row paddingtop50 paddingtop30_tablet paddingtop30_mobile marginbottom50">
-        <div class="large-12 medium-12 small-12 columns">
+    <div class="row paddingtop50 marginbottom50">
+        <div class="large-12 medium-12 small-12 columns paddingtop50_tablet paddingtop50_mobile">
             
 				
-				<h1>Sign in</h1>
-				<h3 class="marginbottom40">NCOA (National Change of Address)</h3>
+				
+				<div class="row">
+					<div class="columns large-6 medium-6 small-12">
+						
+						
+						
+<!-- Area One  -->
+<h1>NCOA Mover Data Service</h1>
+<p>Sign in or sign up. Then agree to our Terms of Use and get started cleaning your data.</p>
+<p>Before cleaning your data with NCOA Mover Data service, you need to create a Canada Post business profile and accept the NCOA Terms of Use on behalf of your company. It only takes a few minutes. You’ll receivea Terms of Use ID that you give to the NCOA provider handling your request.</p>
+<p class="hide-for-medium-up">If you don’t have a Canada Post business profile, please sign up to create one now.</p>
+<!-- Area One  -->
+
+						<a class="button marginbottom30" href="#">Sign Up</a>
+						
+<!-- Area Two  -->
+<div class="hide-for-small-only">
+<h5 class="marginbottom10">If you are a returning NCOA Mover Data services client, sign in  to:</h5> 
+<ul>
+<li>View your Terms of Use agreement(s).</li>
+<li>Renew your Terms of Use agreement.</li>
+<li>Update your profile and alternate contact information.</li>
+</ul>
+</div>
+<!-- Area Two  -->
+						
+						
+					</div>
+					<div class="columns large-offset-2 medium-offset-2 large-4 medium-4 small-12">
+						
+						
+<!-- Area Three  -->
+<h4>Existing customer – Sign in</h4>
+<p>Already have a Canada Post profile? Please sign in to review and agree to NCOA Terms of Use.</p>
+<div class="show-for-small-only">
+<p class="marginbottom10">If you are a returning NCOA Mover Data services client, sign in  to:</p>
+<ul>
+<li>View your Terms of Use agreement(s).</li>
+<li>Renew your Terms of Use agreement.</li>
+<li>Update your profile and alternate contact information.</li>
+</ul>
+</div>
+<!-- Area Three  -->
+						
+						<form method="post" action="https://STG002-sso.epost.ca/sso/lfe/ui/login?templateId=cpcapps&amp;manifestId=cpgSecurity&amp;stepupId=consumer,smb_link,smb_mode1,commercial_link&amp;language=en&amp;sourceUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue&amp;targetUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue" name="cpidSignIn" class="cpidSignIn" autocomplete="off">
+							<label for="sso_username"><strong>Username:</strong></label>
+							<input type="text" name="username" id="sso_username" class="region3input">
+							<div class="left rememberbox"><input type="checkbox" name="remember" id='remember' value="remember"><label for="remember">Remember Username</label></div>
+							<p class="text-right negmargintop10 xsmalltxt"><a href="https://STG002-sso.epost.ca/sso/lfe/ui/forgotUsername?language=en&amp;templateId=cpcapps&amp;sourceUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue&amp;targetUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue">Forgot your username?</a></p>
+
+							<div class="clear"></div>
+							<label for="sso_password"><strong>Password:</strong></label>
+							<input type="password" name="password" id="sso_password" class="region3input">
+							<p class="text-right negmargintop10 xsmalltxt"><a href="https://STG002-sso.epost.ca/sso/lfe/ui/forgotPassword?language=en&amp;templateId=cpcapps&amp;sourceUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue&amp;targetUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue">Forgot Password?</a></p>
+							<input type="submit" value="Sign In" class="button light margin-right">
+						</form>
+						
+					</div>
+				</div>
 				
 				
-				<div class="alert-box msgInfo marginbottom30" data-alert="data-alert">
+				
+				
+				<!-- <div class="alert-box msgInfo marginbottom30" data-alert="data-alert">
 					<code><span>i</span></code>
 					<p>You must register as a Canada Post business customer to access NCOA.  Signing in with your CP Username and Password will enable you to:</p>
 					<ul>
@@ -84,8 +143,6 @@
 					<li>Renew your Terms of Use prior to their annual expiry</li>
 					</ul>
 				</div>
-			
-			
 		      <div class="row">
 		          <div class="large-4 medium-4 small-12 columns rightborder-notsmall paddingright30">
 
@@ -94,23 +151,20 @@
 								<input type="text" name="username" id="sso_username" class="region3input">
 								<div class="left rememberbox"><input type="checkbox" name="remember" id='remember' value="remember"><label for="remember">Remember Username</label></div>
 								<p class="text-right negmargintop10 xsmalltxt"><a href="https://STG002-sso.epost.ca/sso/lfe/ui/forgotUsername?language=en&amp;templateId=cpcapps&amp;sourceUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue&amp;targetUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue">Forgot your username?</a></p>
-								
+
 								<div class="clear"></div>
 								<label for="sso_password"><strong>Password:</strong></label>
 								<input type="password" name="password" id="sso_password" class="region3input">
 								<p class="text-right negmargintop10 xsmalltxt"><a href="https://STG002-sso.epost.ca/sso/lfe/ui/forgotPassword?language=en&amp;templateId=cpcapps&amp;sourceUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue&amp;targetUrl=https%3A%2F%2Fstg12.canadapost.ca%2Fshop%2Fpersonal%2Fbasket.jsf%3FforceVouchFor%3Dtrue">Forgot Password?</a></p>
 								<input type="submit" value="Sign In" class="button light margin-right">
 							</form>
-						 
 					</div>
 					<div class="large-4 medium-4 small-12 end columns">
-						
 						<h4>New to Canada Post?</h4>
 						<p>Create a Canada Post Business Profile to access the National Change of Address service.</p>
 						<a class="button" href="#">Sign Up</a>
-						
 					</div>
-				</div>
+				</div> -->
 				
 				
 				

@@ -1,3 +1,14 @@
+
+
+
+.serviceprovidersmallitem{
+	margin:0;
+	line-height: 1em;
+	height: 140px;
+}
+
+
+
 .fullWidthHero .main_banner_ncoa {
 	background-image: url('../images/lobby-header.jpg');
 	background-color: #212145;
@@ -6,6 +17,7 @@
 	background-size: auto 100%;
 	height: 300px;
 	padding: 0;
+	margin-top:  4.500rem; 
 }
 
 .fullWidthHero .main_banner_ncoa h1 {
@@ -138,4 +150,13 @@ table.serviceproviderstable thead tr th{padding:0 0 10px 0;}
 table.serviceproviderstable tbody tr{border-bottom:1px solid #e5e5e5;}
 table.serviceproviderstable tbody tr td{font-size:12px;padding:10px 0;vertical-align:top;}
 
+
+.panel.white{background:#fff;border:none;}
+
+/* Small screens*/
+@media only screen and (max-width: 40em) {
+	#ncoa-faq table.changepaddingbaseddevice tr td{
+		padding: 5px;
+	}
+}
 
